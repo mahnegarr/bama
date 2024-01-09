@@ -46,6 +46,10 @@ body {
   position: relative;
   left: 10%;
 }
+.menu-items{
+    position: relative;
+    display: inline-block;
+}
 .header-menu-section .menu-items ul {
   display: flex;
   flex-direction: row;
@@ -127,6 +131,7 @@ body {
 }
 
 .car-sub-menu {
+    position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -135,6 +140,7 @@ body {
   background-color: var(--smoke-color);
   width: 310px;
   margin-right: 7rem;
+  display: none !important;
 }
 .car-sub-menu a {
   display: block;
@@ -180,8 +186,8 @@ body {
   margin-right: 0.3rem;
 }
 
-li:nth-child(1):hover + .car-sub-menu{
-  display: none;
+.menu-items ul li:nth-child(3):hover .car-sub-menu{
+  display: block !important;
 }
 
 @media (max-width: 900px) {
