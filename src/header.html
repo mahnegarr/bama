@@ -1,53 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <div class="header-container">
-            
+      <div class="header-container">
+        <div class="header-menu-section">
+          <button class="hamburger-button" data-v-08673970="">
+            <svg viewBox="0 0 24 24" data-v-08673970="">
+              <path
+                d="M22 13H2v-2h20zm0-9H2v2h20zm0 14H2v2h20z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+          <div class="menu-items">
+            <ul>
+              <li>خودرو</li>
+              <li>موتور سیکلت</li>
+              <li>سنگین</li>
+              <li>باما</li>
+            </ul>
+          </div>
         </div>
-        <div class="submit-add">
-            <a href=""></a>
+        <div class="header-logo">
+          <svg
+            width="81"
+            height="65"
+            viewBox="0 0 81 65"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="bama-logo"
+            data-v-5561ece8=""
+          >
+            <path
+              d="M78.5 26.2959H62.5V42.2959H78.5V26.2959Z"
+              fill="#1F1F1E"
+              data-v-5561ece8=""
+            ></path>
+            <path
+              d="M18.5 2.2959H2.5V42.2959H18.5V2.2959Z"
+              fill="#1F1F1E"
+              data-v-5561ece8=""
+            ></path>
+            <path
+              d="M58.5 2.2959H42.5V42.2959H58.5V2.2959Z"
+              fill="#1F1F1E"
+              data-v-5561ece8=""
+            ></path>
+            <path
+              d="M30.5 42.2959C34.9183 42.2959 38.5 38.7142 38.5 34.2959C38.5 29.8776 34.9183 26.2959 30.5 26.2959C26.0817 26.2959 22.5 29.8776 22.5 34.2959C22.5 38.7142 26.0817 42.2959 30.5 42.2959Z"
+              fill="#1F1F1E"
+              data-v-5561ece8=""
+            ></path>
+            <path
+              d="M70.5 62.2959C74.9183 62.2959 78.5 58.7142 78.5 54.2959C78.5 49.8776 74.9183 46.2959 70.5 46.2959C66.0817 46.2959 62.5 49.8776 62.5 54.2959C62.5 58.7142 66.0817 62.2959 70.5 62.2959Z"
+              fill="#1F1F1E"
+              data-v-5561ece8=""
+            ></path>
+          </svg>
         </div>
-        <svg
-        width="81"
-        height="65"
-        viewBox="0 0 81 65"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        class="bama-logo"
-        data-v-5561ece8=""
-      >
-        <path
-          d="M78.5 26.2959H62.5V42.2959H78.5V26.2959Z"
-          fill="#1F1F1E"
-          data-v-5561ece8=""
-        ></path>
-        <path
-          d="M18.5 2.2959H2.5V42.2959H18.5V2.2959Z"
-          fill="#1F1F1E"
-          data-v-5561ece8=""
-        ></path>
-        <path
-          d="M58.5 2.2959H42.5V42.2959H58.5V2.2959Z"
-          fill="#1F1F1E"
-          data-v-5561ece8=""
-        ></path>
-        <path
-          d="M30.5 42.2959C34.9183 42.2959 38.5 38.7142 38.5 34.2959C38.5 29.8776 34.9183 26.2959 30.5 26.2959C26.0817 26.2959 22.5 29.8776 22.5 34.2959C22.5 38.7142 26.0817 42.2959 30.5 42.2959Z"
-          fill="#1F1F1E"
-          data-v-5561ece8=""
-        ></path>
-        <path
-          d="M70.5 62.2959C74.9183 62.2959 78.5 58.7142 78.5 54.2959C78.5 49.8776 74.9183 46.2959 70.5 46.2959C66.0817 46.2959 62.5 49.8776 62.5 54.2959C62.5 58.7142 66.0817 62.2959 70.5 62.2959Z"
-          fill="#1F1F1E"
-          data-v-5561ece8=""
-        ></path>
-      </svg>
+        <div class="header-toolbar">
+          <div class="profile-section">
+            <div class="profile-icon">
+              <svg
+                data-v-c0aa8e74=""
+                viewBox="0 0 24 24"
+                class="button-profile-icon"
+              >
+                <path
+                  d="M9 13h6l.95-6.43c.17-1.15-.17-2.31-.93-3.19C14.26 2.5 13.16 2 12 2s-2.26.5-3.02 1.38c-.76.88-1.1 2.04-.93 3.19zm1.5-8.31c.76-.88 2.26-.88 3.01 0 .38.44.55 1.02.46 1.59L13.28 11h-2.55l-.69-4.72a2 2 0 0 1 .46-1.59m9.51 11.32-.56-.27c-4.71-2.3-10.17-2.3-14.88 0l-.56.27v5H20v-5Zm-2 3H6v-1.73c3.82-1.68 8.18-1.68 12 0v1.73Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <div class="profile-text">
+              <p>حساب من</p>
+              <i class="fa fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="submit-add">
+            <a href="#"></a>
+            <i class="fa-solid fa-plus"></i>
+            <p>ثبت آگهی</p>
+          </div>
+        </div>
+      </div>
     </header>
-</body>
+  </body>
 </html>

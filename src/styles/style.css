@@ -1,0 +1,8 @@
+.hamburger-button{
+    display: none;
+}
+.fa-chevron-down{
+    background-color: aqua;
+    padding: 1rem;
+    border-radius: 50%;
+}
