@@ -77,8 +77,8 @@ body {
   border-radius: 50px;
   cursor: pointer;
 }
-.submit-add:hover{
-    background-color: #EBEBEB;
+.submit-add:hover {
+  background-color: #ebebeb;
 }
 .icon-container {
   width: 3rem;
@@ -106,4 +106,41 @@ body {
 
 .profile-text i {
   padding-right: 0.7rem;
+}
+.hamburger-button {
+  display: none;
+}
+.sub-menu{
+    display: none !important;
+    width: 500px;
+    height: auto;
+    background-color: #afe600;
+    display: flex;
+    flex-direction: column;
+}
+.sub-menu-items ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+
+@media (max-width: 900px) {
+  .profile-text,
+  .profile-icon,
+  .menu-items {
+    display: none;
+  }
+  .hamburger-button {
+    display: block;
+    border: none;
+    cursor: pointer;
+  }
+  .hamburger-button i {
+    font-size: 3rem;
+  }
+  .sub-menu{
+    height: 100vh;
+  }
+
 }
