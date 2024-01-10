@@ -16,6 +16,7 @@
 :root {
   --primary-color: #afe600;
   --secondary-color: #3e1ffa;
+  --white: #fff;
   --smoke-color: #ebebeb;
   --red: #cd204a;
 }
@@ -150,19 +151,21 @@ body {
   background-size: cover;
 }
 .search-container {
-  background-color: #afe600;
   display: flex;
   justify-content: center;
-  
 }
-.search-box{
-  width: 40%;
-  background-color: #cd204a;
-  margin: 1rem 0;
+.search-box {
+  width: 45%;
+  background-color: var(--white);
+  margin: 0.8rem 0;
+  padding: 1rem 1.5rem;
+  display: flex;
+  border-radius: 50px;
+  justify-content: space-between;
   text-align: center;
 }
 
-.search-modal{
+.search-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -172,7 +175,9 @@ body {
   display: none;
   z-index: 10;
 }
-
+.search-box p {
+  opacity: 0.5;
+}
 
 .search-items-container {
   display: flex;
