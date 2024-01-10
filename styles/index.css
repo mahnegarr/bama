@@ -180,7 +180,21 @@ body {
 }
 
 .search-items-container {
+  width: 50%;
   display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+.search-items-container a {
+  text-decoration: none;
+  color: #9c9b9a;
+  font-size: 16px;
+  background-color: var(--white);
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  cursor: pointer;
 }
 @media (max-width: 900px) {
   .profile-text,
