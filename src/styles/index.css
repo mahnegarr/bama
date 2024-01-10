@@ -26,7 +26,7 @@
     margin: 0;
   }
   body {
-    width: 1900px;
+    max-width: 1920px;
     height: 100vh;
     font-family: "PeydaWeb SemBd";
     font-size: 20px;
