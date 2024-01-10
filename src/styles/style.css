@@ -140,7 +140,7 @@ body {
   background-color: var(--smoke-color);
   width: 310px;
   margin-right: 7rem;
-  display: none !important;
+  display: none ;
 }
 .car-sub-menu a {
   display: block;
