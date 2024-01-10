@@ -120,6 +120,24 @@ body {
   display: none;
 }
 
+.ride-sub-menu{
+  background-color: #afe600;
+}
+.car-sub-menu {
+  display: none;
+}
+.ride-sub-menu{
+  display: none;
+}
+.menu-items li:first-child:hover .car-sub-menu,
+.menu-items li:first-child:hover .car-sub-menu{
+  display: block;
+}
+
+.menu-items li:nth-child(2):hover .ride-sub-menu,
+.menu-items li:nth-child(2):hover .ride-sub-menu{
+  display: block;
+}
 
 @media (max-width: 900px) {
   .profile-text,

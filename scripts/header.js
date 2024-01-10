@@ -1,6 +1,13 @@
-const menuIcon = document.querySelector(".hamburger-button ")
-const classTitles = document.querySelector(".titles")
+// const menuItems = document.querySelectorAll(".menu-items ul li");
+// const subMenus = document.querySelector(".submenu");
+// menuItems.forEach((item) => {
+//   item.addEventListener("mouseover", ()=>{
+//     menuItemsHandler(subMenus)
+//   });
+// });
 
-menuIcon.addEventListener("click",()=>{
-    classTitles.classList.toggle("titles")
-})
+// function menuItemsHandler(elements) {
+ 
+//     elements.style.display = "block";
+
+// }
