@@ -7,7 +7,15 @@
 // });
 
 // function menuItemsHandler(elements) {
- 
+
 //     elements.style.display = "block";
 
 // }
+
+// const searchBox = document.querySelector(".search-box");
+// const searchModal = document.querySelector(".search-modal");
+// searchBox.addEventListener("click", () => {
+//   searchModal.style.display = "block";
+// });
+
+

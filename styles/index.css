@@ -120,25 +120,63 @@ body {
   display: none;
 }
 
-.ride-sub-menu{
+.ride-sub-menu {
   background-color: #afe600;
 }
 .car-sub-menu {
   display: none;
 }
-.ride-sub-menu{
+.ride-sub-menu {
   display: none;
 }
 .menu-items li:first-child:hover .car-sub-menu,
-.menu-items li:first-child:hover .car-sub-menu{
+.menu-items li:first-child:hover .car-sub-menu {
   display: block;
 }
 
 .menu-items li:nth-child(2):hover .ride-sub-menu,
-.menu-items li:nth-child(2):hover .ride-sub-menu{
+.menu-items li:nth-child(2):hover .ride-sub-menu {
   display: block;
 }
 
+/************************************ end of header */
+
+.top-section {
+  width: 100%;
+  height: 495px;
+  background-image: url(../assets/top-sec.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.search-container {
+  background-color: #afe600;
+  display: flex;
+  justify-content: center;
+  
+}
+.search-box{
+  width: 40%;
+  background-color: #cd204a;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.search-modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #afe600;
+  display: none;
+  z-index: 10;
+}
+
+
+.search-items-container {
+  display: flex;
+}
 @media (max-width: 900px) {
   .profile-text,
   .profile-icon,
@@ -155,5 +193,8 @@ body {
   }
   .sub-menu {
     height: 100vh;
+  }
+  .top-section {
+    background-image: url(../assets/top-sec-smaller.jpg);
   }
 }
