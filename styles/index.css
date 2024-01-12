@@ -31,19 +31,19 @@
   @apply box-border p-0 m-0;
 }
 body {
-  @apply font-peyda ;
+  @apply font-peyda max-w-[1920px]  ;
 }
 
 /*********** Header styles */
 .header-container {
-  @apply flex flex-row justify-between items-center w-full h-[100px] py-[1rem] px-0;
+  @apply flex flex-row justify-evenly items-center w-full h-[100px] py-[1rem] px-0;
 }
 
 .header-menu-section .menu-items ul li {
   @apply list-none cursor-pointer pl-[1.5rem];
 }
 .submit-add {
-  @apply flex items-center ml-[-6rem] mr-[2rem] py-[0.8rem] px-[1rem] border-[1px] border-[#D8D5D5] cursor-pointer hover:bg-[#ebebeb];
+  @apply flex items-center ml-[-6rem] mr-[2rem] py-[0.8rem] px-[1rem] border-[1px] border-[#D8D5D5] rounded-[50px] cursor-pointer hover:bg-[#ebebeb];
 }
 
 .icon-container{
@@ -69,7 +69,7 @@ body {
 /***************************** start of search modal */
 
 .search-modal{
-    @apply  fixed top-0 left-0 w-[100vw] h-auto bg-[#fff] text-[16px] overflow-y-hidden transition-all duration-[400] ease-in-out z-10 
+    @apply  hidden fixed top-0 left-0 w-[100vw] h-auto bg-[#fff] text-[16px] overflow-y-hidden transition-all duration-[400] ease-in-out z-10 
 }
 .search-modal-svg img{
     @apply w-[400px] h-[400px] flex justify-center items-center mt-[3rem] mx-auto mb-0
