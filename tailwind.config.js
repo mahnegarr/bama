@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./html/*.html", "./scripts/*.js"],
+  content: ["./*.html", "./scripts/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        peyda: ["PeydaWeb SemBd"],
+      },
+    },
   },
   plugins: [],
 };

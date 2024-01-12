@@ -3,297 +3,103 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "PeydaWeb SemBd";
-  
-    src: url("https://db.onlinewebfonts.com/t/f8ecf8ba4bdf80a4ba4277a3b2f702b6.eot");
-  
-    src: url("https://db.onlinewebfonts.com/t/f8ecf8ba4bdf80a4ba4277a3b2f702b6.eot?#iefix")
-        format("embedded-opentype"),
-      url("https://db.onlinewebfonts.com/t/f8ecf8ba4bdf80a4ba4277a3b2f702b6.woff2")
-        format("woff2"),
-      url("https://db.onlinewebfonts.com/t/f8ecf8ba4bdf80a4ba4277a3b2f702b6.woff")
-        format("woff"),
-      url("https://db.onlinewebfonts.com/t/f8ecf8ba4bdf80a4ba4277a3b2f702b6.ttf")
-        format("truetype"),
-      url("https://db.onlinewebfonts.com/t/f8ecf8ba4bdf80a4ba4277a3b2f702b6.svg#PeydaWeb SemBd")
-        format("svg");
-  }
-  
-  :root {
-    --primary-color: #afe600;
-    --secondary-color: #3e1ffa;
-    --white: #fff;
-    --smoke-color: #ebebeb;
-    --red: #cd204a;
-  }
-  
-  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    max-width: 1920px;
-    height: 100vh;
-    font-family: "PeydaWeb SemBd";
-    font-size: 20px;
-    direction: rtl;
-  }
-  
-  .header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    padding: 1rem 0;
-  }
-  
-  .header-menu-section {
-    position: relative;
-    left: 10%;
-  }
-  
+  font-family: "PeydaWeb SemBd";
+
+  src: url("https://db.onlinewebfonts.com/t/f8ecf8ba4bdf80a4ba4277a3b2f702b6.eot");
+
+  src: url("https://db.onlinewebfonts.com/t/f8ecf8ba4bdf80a4ba4277a3b2f702b6.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/f8ecf8ba4bdf80a4ba4277a3b2f702b6.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/f8ecf8ba4bdf80a4ba4277a3b2f702b6.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/f8ecf8ba4bdf80a4ba4277a3b2f702b6.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/f8ecf8ba4bdf80a4ba4277a3b2f702b6.svg#PeydaWeb SemBd")
+      format("svg");
+}
+
+/* :root {
+  --primary-color: #afe600;
+  --secondary-color: #3e1ffa;
+  --white: #fff;
+  --smoke-color: #ebebeb;
+  --red: #cd204a;
+} */
+
+* {
+  @apply box-border p-0 m-0;
+}
+body {
+  @apply font-peyda ;
+}
+
+/*********** Header styles */
+.header-container {
+  @apply flex flex-row justify-between items-center w-full h-[100px] py-[1rem] px-0;
+}
+
+.header-menu-section .menu-items ul li {
+  @apply list-none cursor-pointer pl-[1.5rem];
+}
+.submit-add {
+  @apply flex items-center ml-[-6rem] mr-[2rem] py-[0.8rem] px-[1rem] border-[1px] border-[#D8D5D5] cursor-pointer hover:bg-[#ebebeb];
+}
+
+.icon-container{
+    @apply w-[3rem] h-[3rem] rounded-[50%] ml-[1rem] bg-[#afe600]
+}
+
+/************************************ below header section styles */
+
+.top-section{
+    @apply w-full h-[495px] bg-[url(../assets/top-sec.webp)] bg-no-repeat bg-center bg-cover
+}
+.search-box{
+    @apply w-[45%] bg-[#fff] my-[0.8rem] mx-0 py-[1rem] px-[1.5rem] flex justify-between text-center rounded-[50px]
+}
+
+.search-items-container{
+    @apply w-[50%] flex justify-evenly text-center items-center m-auto
+}
+.search-items-container a{
+    @apply no-underline text-[#9c9b9a] text-[16px] bg-[#fff] py-[.3rem] px-[.6rem] rounded-[20px] cursor-pointer
+}
+
+/***************************** start of search modal */
+
+.search-modal{
+    @apply  fixed top-0 left-0 w-[100vw] h-auto bg-[#fff] text-[16px] overflow-y-hidden transition-all duration-[400] ease-in-out z-10 
+}
+.search-modal-svg img{
+    @apply w-[400px] h-[400px] flex justify-center items-center mt-[3rem] mx-auto mb-0
+}
+.car-toggle{
+    @apply relative flex items-center p-[1rem] rounded-[30px] cursor-pointer bg-[#ebebeb]
+}
+
+/* @media (max-width: 900px) {
+  .profile-text,
+  .profile-icon,
   .menu-items {
-    position: relative;
-    display: inline-block;
+    display: none;
   }
-  
-  .menu-items ul li:first-child:hover .car-sub-menu {
-    display: block !important;
-  }
-  
-  .header-menu-section .menu-items ul {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .header-menu-section .menu-items ul li {
-    list-style: none;
-    cursor: pointer;
-    padding-left: 1.5rem;
-  }
-  
-  .header-logo {
-    position: fixed;
-  }
-  
-  .header-toolbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .profile-section {
-    display: flex;
-    align-items: center;
-  }
-  
-  .submit-add {
-    display: flex;
-    align-items: center;
-    margin-left: -6rem;
-    margin-right: 2rem;
-    padding: 0.8rem 1rem;
-    border: 1px solid rgb(216, 213, 213);
-    border-radius: 50px;
-    cursor: pointer;
-  }
-  
-  .submit-add:hover {
-    background-color: var(--smoke-color);
-  }
-  
-  .icon-container {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-    margin-left: 1rem;
-  }
-  
-  .submit-add i {
-    font-size: 2rem;
-    position: relative;
-    right: 22%;
-    top: 15%;
-  }
-  
-  .button-profile-icon {
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-  }
-  
-  .profile-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .profile-text i {
-    padding-right: 0.7rem;
-  }
-  
+
   .hamburger-button {
-    display: none;
-  }
-  
-  .ride-sub-menu {
-    background-color: #afe600;
-  }
-  
-  .car-sub-menu {
-    display: none;
-  }
-  
-  .ride-sub-menu {
-    display: none;
-  }
-  
-  .menu-items li:first-child:hover .car-sub-menu,
-  .menu-items li:first-child:hover .car-sub-menu {
     display: block;
+    border: none;
+    cursor: pointer;
   }
-  
-  .menu-items li:nth-child(2):hover .ride-sub-menu,
-  .menu-items li:nth-child(2):hover .ride-sub-menu {
-    display: block;
+
+  .hamburger-button i {
+    font-size: 3rem;
   }
-  
-  /************************************ end of header */
-  
+
+  .sub-menu {
+    height: 100vh;
+  }
+
   .top-section {
-    width: 100%;
-    height: 495px;
-    background-image: url(../assets/top-sec.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url(../assets/top-sec-smaller.jpg);
   }
-  
-  .search-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .search-box {
-    width: 45%;
-    background-color: var(--white);
-    margin: 0.8rem 0;
-    padding: 1rem 1.5rem;
-    display: flex;
-    border-radius: 50px;
-    justify-content: space-between;
-    text-align: center;
-  }
-  
-  .search-box p {
-    opacity: 0.5;
-  }
-  
-  .search-items-container {
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    align-items: center;
-    margin: auto;
-  }
-  
-  .search-items-container a {
-    text-decoration: none;
-    color: #9c9b9a;
-    font-size: 16px;
-    background-color: var(--white);
-    padding: 0.3rem 0.6rem;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  /***************************** start of search modal */
-  
-  .search-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: auto;
-    background-color: var(--white);
-    transition: all 0.4s ease-in-out;
-    overflow-y: hidden;
-    font-size: 16px;
-    z-index: 10;
-  }
-  
-  .search-modal-svg img {
-    width: 400px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem auto 0;
-  }
-  
-  .search-modal-footer {
-    height: 70px;
-    background-color: rgba(0, 0, 0, 0.65);
-  }
-  
-  .search-modal-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2rem;
-  }
-  
-  .car-toggle {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 30px;
-    cursor: pointer;
-    background-color: var(--smoke-color);
-  }
-  
-  .car-toggle p{
-    margin: 0 .5rem;
-  }
-  
-  .car-toggle-submenu{
-    position: absolute;
-    top: 10%;
-    right: 5%;
-  }
-  
-  .car-toggle-submenu ul{
-    list-style: none;
-  }
-  
-  @media (max-width: 900px) {
-    .profile-text,
-    .profile-icon,
-    .menu-items {
-      display: none;
-    }
-  
-    .hamburger-button {
-      display: block;
-      border: none;
-      cursor: pointer;
-    }
-  
-    .hamburger-button i {
-      font-size: 3rem;
-    }
-  
-    .sub-menu {
-      height: 100vh;
-    }
-  
-    .top-section {
-      background-image: url(../assets/top-sec-smaller.jpg);
-    }
-  }
+} */
