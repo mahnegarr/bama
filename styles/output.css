@@ -552,8 +552,8 @@ video {
   position: relative;
 }
 
-.right-\[13\%\] {
-  right: 13%;
+.right-\[12\.5\%\] {
+  right: 12.5%;
 }
 
 .right-\[22\%\] {
@@ -566,14 +566,6 @@ video {
 
 .top-\[15\%\] {
   top: 15%;
-}
-
-.right-\[12\%\] {
-  right: 12%;
-}
-
-.right-\[12\.5\%\] {
-  right: 12.5%;
 }
 
 .mx-\[0\.8rem\] {
@@ -852,6 +844,7 @@ body {
   top: 0px;
   left: 0px;
   z-index: 10;
+  display: none;
   height: auto;
   width: 100vw;
   overflow-y: hidden;
@@ -867,8 +860,6 @@ body {
 .search-modal-svg img {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3rem;
-  margin-bottom: 0px;
   display: flex;
   height: 400px;
   width: 400px;

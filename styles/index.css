@@ -69,7 +69,7 @@ body {
 /***************************** start of search modal */
 
 .search-modal{
-    @apply  fixed top-0 left-0 w-[100vw] h-auto bg-[#fff] text-[16px] overflow-y-hidden transition-all duration-[400] ease-in-out z-10 
+    @apply hidden fixed top-0 left-0 w-[100vw] h-auto bg-[#fff] text-[16px] overflow-y-hidden transition-all duration-[400] ease-in-out z-10 
 }
 .search-modal-svg img{
     @apply w-[400px] h-[400px] flex justify-center items-center mx-auto 
