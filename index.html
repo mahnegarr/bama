@@ -16,7 +16,7 @@
   <body>
     <header>
       <div class="header-container">
-        <div class="header-menu-section ">
+        <div class="header-menu-section">
           <button class="hamburger-button hidden" data-v-08673970="">
             <i class="fas fa-bars"></i>
           </button>
@@ -29,7 +29,7 @@
             </ul>
           </div>
         </div>
-        <div class="header-logo  ">
+        <div class="header-logo">
           <img src="./assets/bama-logo.svg" alt="bama-logo" />
         </div>
         <div class="header-toolbar flex justify-between ml-[7rem] items-center">
@@ -54,7 +54,9 @@
           <div class="submit-add">
             <a href="#"></a>
             <div class="icon-container">
-              <i class="fas fa-plus text-[2rem] relative right-[22%] top-[15%]"></i>
+              <i
+                class="fas fa-plus text-[2rem] relative right-[22%] top-[15%]"
+              ></i>
             </div>
             <p>ثبت آگهی</p>
           </div>
@@ -90,12 +92,12 @@
         </ul>
       </div>
     </div>
-    
+
     <!--------------------------------- end of header -->
     <section class="top-section">
       <div class="search-container flex justify-center">
         <div class="search-box">
-          <p class="opacity-50" >جستجو خودرو ...</p>
+          <p class="opacity-50">جستجو خودرو ...</p>
           <i class="fas fa-search"></i>
         </div>
       </div>
@@ -112,25 +114,31 @@
         <a href="#">منطقه آزاد</a>
       </div>
     </section>
-    <div class="search-modal ">
-      <div class="search-modal-container flex justify-evenly mt-[2rem]">
+    <div class="search-modal">
+      <div class="search-modal-container flex mr-[10rem] mt-[2rem]">
         <div class="car-toggle">
           <i class="fas fa-car"></i>
-          <p class="my-0 mx-[0.5rem]">خودرو</p>
-          <i class="fas fa-arrow-down"></i>
+          <p class="my-0 mx-[0.8rem]">خودرو</p>
+          <i class="fa-solid fa-caret-down"></i>
         </div>
-        <div class="car-toggle-submenu absolute top-[10%] right-[5%]">
-          <ul class="list-none">
-            <li value="car">خودرو</li>
-            <li value="motor">موتورسیکلت</li>
+        <div class="car-toggle-submenu hidden absolute top-[14%] right-[12.5%]">
+          <ul class="list-none rounded-[8px] border-[1px] border-[#e5e6e4]">
+            <div class="flex items-center hover:bg-[#ebebeb] cursor-pointer p-3">
+              <i class="fas fa-car pl-2"></i>
+              <li value="car">خودرو</li>
+            </div>
+            <div class="flex items-center hover:bg-[#ebebeb] cursor-pointer p-3 ">
+              <i class="fa-solid fa-motorcycle pl-2"></i>
+              <li value="motor">موتورسیکلت</li>
+            </div>
           </ul>
         </div>
         <input
           type="text"
-          class="search-modal-input"
+          class="search-modal-input bg-[#f5f5f5] ml-[15rem] w-[50%] rounded-[40px] placeholder:pr-4"
           placeholder="در باما جستجو کنید"
         />
-        <i class="fas fa-times"></i>
+        <i class="fas fa-times cursor-pointer mt-3 text-[2rem]  "></i>
       </div>
       <div class="search-modal-svg">
         <img src="./assets/search-modal.svg" alt="" />
