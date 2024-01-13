@@ -17,6 +17,7 @@ const searchModal = document.querySelector(".search-modal");
 const crossIcon = document.querySelector(".fa-times");
 const carToggle = document.querySelector(".car-toggle");
 const carToggleSub = document.querySelector(".car-toggle-submenu");
+const filterWrapper = document.querySelector(".filters-wrapper-right")
 
 searchBox.addEventListener("click", () => {
   searchModal.style.display = "block";
@@ -33,3 +34,7 @@ carToggle.addEventListener("click", () => {
 searchBox.addEventListener("click", () => {
   searchModal.style.display = "block";
 });
+
+filterWrapper.addEventListener("click",()=>{
+  
+})

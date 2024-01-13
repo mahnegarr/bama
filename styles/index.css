@@ -19,6 +19,16 @@
       format("svg");
 }
 
+
+@font-face {
+  font-family: "PeydaWeb";
+  src: url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.eot");
+  src: url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.svg#PeydaWeb")format("svg");
+}
 /* :root {
   --primary-color: #afe600;
   --secondary-color: #3e1ffa;
@@ -53,10 +63,10 @@ body {
 /************************************ below header section styles */
 
 .top-section{
-    @apply w-full h-[495px] bg-[url(../assets/top-sec.webp)] bg-no-repeat bg-center bg-cover
+    @apply w-full h-[450px] bg-[url(../assets/top-sec.webp)] bg-no-repeat bg-center bg-cover
 }
 .search-box{
-    @apply w-[50%] bg-[#fff] my-[0.8rem] mx-0 py-[1rem] px-[1.5rem] flex justify-between text-center rounded-[50px]
+    @apply w-[50%] bg-[#fff] my-[0.8rem] mx-0 py-[.7rem] px-[1.5rem] flex justify-between text-center rounded-[50px]
 }
 
 .search-items-container{

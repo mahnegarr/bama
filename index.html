@@ -98,7 +98,7 @@
       <div class="search-container flex justify-center">
         <div class="search-box">
           <p class="opacity-50">جستجو خودرو ...</p>
-          <i class="fas fa-search"></i>
+          <i class="fas fa-search mt-[.3rem]"></i>
         </div>
       </div>
       <div class="search-items-container">
@@ -113,14 +113,57 @@
         <a href="#">دوگانه سوز</a>
         <a href="#">منطقه آزاد</a>
       </div>
-      <div>
-        <img src="./assets/motefavet-pic.svg" alt="motefavet-pic">
+      <div class="mt-[4rem] mr-[8rem]">
+        <img src="./assets/motefavet-pic.svg" alt="motefavet-pic" />
       </div>
-      <div>
-        <img src="./assets/bahman-motor.svg" alt="bahman-motor">
-        <button class="more-info-btn ">اطلاعات بیشتر</button>
+      <div class="w-[80%] flex justify-between mt-[2rem] mx-auto">
+        <img src="./assets/bahman-motor.svg" alt="bahman-motor" />
+        <button
+          class="more-info-btn text-[#fff] border-[1px] border-[#fff] rounded-[40px] py-[.8rem] px-[3rem] hover:bg-[#fff] hover:text-gray-500"
+        >
+          اطلاعات بیشتر
+        </button>
+      </div>
+      <div
+        class="filters-wrapper w-[80%] bg-[#fff] grid grid-cols-3 mx-auto mt-[1rem] px-[1.8rem] py-[2rem] z-1"
+      >
+        <div class="filters-wrapper-right col-start-1 col-end-2">
+          <p>برند،مدل</p>
+          <span class="font-peydaWeb text-[14px] text-[#494A48]"
+            >تمام برند‌ها، مدل‌ها</span
+          >
+          <i class="fa-solid fa-caret-down mr-[10rem]"></i>
+        </div>
+        <div
+          class="filters-wrapper-left col-start-2 col-end-4 flex justify-between"
+        >
+          <div class="filters-wrapper-price-container flex">
+            <span>قیمت</span>
+            <p class="text-[14px] opacity-80 font-peydaWeb">
+              0 میلیون - 30 میلیارد تومان
+            </p>
+            <div class="price-range-slider">
+              <p class="range-value">
+                <input type="text" name="" id="amount" readonly />
+              </p>
+              <div class="range-bar" id="slider-range"></div>
+            </div>
+          </div>
+          <div
+            class="all-ad-btn flex flex-row items-center bg-[#afe600] py-[1rem] px-[3rem] rounded-[40px]"
+          >
+            <svg class="w-[2rem] pl-2" viewBox="0 0 24 24" data-v-12e38da6="">
+              <path
+                d="m19 4-.48-.13a24.866 24.866 0 0 0-13.04 0L5 4 3.02 8.99H1v2h1.69a5.996 5.996 0 1 0 7.34 9.44l3.28 3.26 1.41-1.42-3.32-3.3c.2 0 .4.03.61.03 2.39 0 4.73-.36 7-1.04V21h2V11h2V9h-2.02l-1.98-4.99ZM6.49 5.67c3.6-.9 7.42-.9 11.03 0l1.32 3.32H5.17zM6 19.99c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4m13-6.59-2.39 1.59h-4.7c-.12-.72-.37-1.39-.72-2h4.82l3-1.99v2.4Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <button>نمایش همه آگهی ها</button>
+          </div>
+        </div>
       </div>
     </section>
+    <!------------------- search modal section -->
     <div class="search-modal">
       <div class="search-modal-container flex mr-[10rem] mt-[2rem]">
         <div class="car-toggle">
@@ -128,13 +171,17 @@
           <p class="my-0 mx-[0.8rem]">خودرو</p>
           <i class="fa-solid fa-caret-down"></i>
         </div>
-        <div class="car-toggle-submenu hidden absolute top-[14%] right-[12.5%]">
+        <div class="car-toggle-submenu hidden absolute top-[15%] right-[12.5%]">
           <ul class="list-none rounded-[8px] border-[1px] border-[#e5e6e4]">
-            <div class="flex items-center hover:bg-[#ebebeb] cursor-pointer p-3">
+            <div
+              class="flex items-center hover:bg-[#ebebeb] cursor-pointer p-3"
+            >
               <i class="fas fa-car pl-2"></i>
               <li value="car">خودرو</li>
             </div>
-            <div class="flex items-center hover:bg-[#ebebeb] cursor-pointer p-3 ">
+            <div
+              class="flex items-center hover:bg-[#ebebeb] cursor-pointer p-3"
+            >
               <i class="fa-solid fa-motorcycle pl-2"></i>
               <li value="motor">موتورسیکلت</li>
             </div>
@@ -145,13 +192,26 @@
           class="search-modal-input bg-[#f5f5f5] ml-[15rem] w-[50%] rounded-[40px] placeholder:pr-4"
           placeholder="در باما جستجو کنید"
         />
-        <i class="fas fa-times cursor-pointer mt-3 text-[2rem]  "></i>
+        <i class="fas fa-times cursor-pointer mt-3 text-[2rem]"></i>
       </div>
       <div class="search-modal-svg">
         <img src="./assets/search-modal.svg" alt="" />
       </div>
       <div class="search-modal-footer h-[70px] bg-gray-600">
         <span></span>
+      </div>
+    </div>
+
+    <!-------------------- Brand modal section -->
+    <div class="brand-modal">
+      <h2>انتخاب برند و مدل</h2>
+      <p>برند و مدل مورد نظر خود را انتخاب کنید.</p>
+      <div class="brand-modal-searchbox">
+        <input type="text" name="" id="" placeholder="جستجو برند و مدل" />
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="brand-modal-selected-list">
+        <div></div>
       </div>
     </div>
   </body>

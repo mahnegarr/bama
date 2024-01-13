@@ -560,17 +560,34 @@ video {
   right: 22%;
 }
 
-.top-\[14\%\] {
-  top: 14%;
-}
-
 .top-\[15\%\] {
   top: 15%;
+}
+
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
+}
+
+.col-end-2 {
+  grid-column-end: 2;
+}
+
+.col-end-4 {
+  grid-column-end: 4;
 }
 
 .mx-\[0\.8rem\] {
   margin-left: 0.8rem;
   margin-right: 0.8rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .my-0 {
@@ -590,12 +607,64 @@ video {
   margin-right: 10rem;
 }
 
+.mr-\[8rem\] {
+  margin-right: 8rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
 
+.mt-\[\.3rem\] {
+  margin-top: .3rem;
+}
+
+.mt-\[1rem\] {
+  margin-top: 1rem;
+}
+
 .mt-\[2rem\] {
   margin-top: 2rem;
+}
+
+.mt-\[4rem\] {
+  margin-top: 4rem;
+}
+
+.mr-\[\] {
+  margin-right: ;
+}
+
+.mr-\[4rem\] {
+  margin-right: 4rem;
+}
+
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mb-\[1rem\] {
+  margin-bottom: 1rem;
+}
+
+.mb-\[2rem\] {
+  margin-bottom: 2rem;
+}
+
+.mb-\[3rem\] {
+  margin-bottom: 3rem;
+}
+
+.mb-\[8rem\] {
+  margin-bottom: 8rem;
+}
+
+.mt-\[-2rem\] {
+  margin-top: -2rem;
+}
+
+.mt-\[-10rem\] {
+  margin-top: -10rem;
 }
 
 .block {
@@ -604,6 +673,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -626,12 +699,20 @@ video {
   width: 50%;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
 
 .list-none {
   list-style-type: none;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -667,9 +748,24 @@ video {
   border-color: rgb(229 230 228 / var(--tw-border-opacity));
 }
 
+.border-\[\#fff\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.bg-\[\#afe600\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(175 230 0 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#f5f5f5\] {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-gray-600 {
@@ -681,20 +777,116 @@ video {
   padding: 0.75rem;
 }
 
+.px-\[1\.8rem\] {
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+}
+
+.px-\[3rem\] {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.py-\[\.8rem\] {
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+}
+
+.py-\[1rem\] {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-\[2rem\] {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .pr-\[0\.7rem\] {
   padding-right: 0.7rem;
 }
 
+.font-peydaWeb {
+  font-family: PeydaWeb;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
+}
+
 .text-\[2rem\] {
   font-size: 2rem;
 }
 
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.text-\[4px\] {
+  font-size: 4px;
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
+.font-\[14px\] {
+  font-weight: 14px;
+}
+
+.font-\[18px\] {
+  font-weight: 18px;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-extralight {
+  font-weight: 200;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.text-\[\#fff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\#ADFFDF\] {
+  --tw-text-opacity: 1;
+  color: rgb(173 255 223 / var(--tw-text-opacity));
+}
+
+.text-\[\#494A48\] {
+  --tw-text-opacity: 1;
+  color: rgb(73 74 72 / var(--tw-text-opacity));
+}
+
 .opacity-50 {
   opacity: 0.5;
+}
+
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 @font-face {
@@ -712,6 +904,18 @@ video {
       format("truetype"),
     url("https://db.onlinewebfonts.com/t/f8ecf8ba4bdf80a4ba4277a3b2f702b6.svg#PeydaWeb SemBd")
       format("svg");
+}
+
+@font-face {
+  font-family: "PeydaWeb";
+
+  src: url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.eot");
+
+  src: url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.svg#PeydaWeb")format("svg");
 }
 
 /* :root {
@@ -787,7 +991,7 @@ body {
 /************************************ below header section styles */
 
 .top-section {
-  height: 495px;
+  height: 450px;
   width: 100%;
   background-image: url(../assets/top-sec.webp);
   background-size: cover;
@@ -806,8 +1010,8 @@ body {
   border-radius: 50px;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: .7rem;
+  padding-bottom: .7rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   text-align: center;
@@ -919,4 +1123,14 @@ body {
 .hover\:bg-\[\#ebebeb\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(235 235 235 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#fff\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:text-gray-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
