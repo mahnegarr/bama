@@ -53,7 +53,7 @@ body {
   @apply list-none cursor-pointer pl-[1.5rem];
 }
 .submit-add {
-  @apply flex items-center ml-[-6rem] mr-[2rem] py-[0.8rem] px-[1rem] border-[1px] border-[#D8D5D5] rounded-[50px] cursor-pointer hover:bg-[#ebebeb];
+  @apply flex items-center ml-[-6rem] mr-[2rem] py-[0.6rem] px-[1rem] border-[1px] border-[#D8D5D5] rounded-[50px] cursor-pointer hover:bg-[#ebebeb];
 }
 
 .icon-container{
@@ -86,6 +86,13 @@ body {
 }
 .car-toggle{
     @apply relative flex items-center px-[1.4rem] py-[1rem] rounded-[30px] cursor-pointer bg-[#f5f5f5] ml-4
+}
+
+/*************************** Price Range Slider Style */
+
+/*************************** Brand modal style */
+.brand-modal{
+  @apply w-[360px] h-[100vh]
 }
 
 /* @media (max-width: 900px) {

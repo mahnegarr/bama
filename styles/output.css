@@ -564,6 +564,18 @@ video {
   top: 15%;
 }
 
+.left-\[1rem\] {
+  left: 1rem;
+}
+
+.left-\[1\] {
+  left: 1;
+}
+
+.left-\[10\%\] {
+  left: 10%;
+}
+
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -655,8 +667,16 @@ video {
   height: 70px;
 }
 
+.w-\[270px\] {
+  width: 270px;
+}
+
 .w-\[2rem\] {
   width: 2rem;
+}
+
+.w-\[300px\] {
+  width: 300px;
 }
 
 .w-\[50\%\] {
@@ -665,6 +685,18 @@ video {
 
 .w-\[80\%\] {
   width: 80%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[330px\] {
+  width: 330px;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .cursor-pointer {
@@ -737,8 +769,38 @@ video {
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
+.bg-slate-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#f5f5\] {
+  background-color: #f5f5;
+}
+
+.bg-\[\#787775\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 119 117 / var(--tw-bg-opacity));
+}
+
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-\[\] {
+  padding: ;
+}
+
+.p-\[2rem\] {
+  padding: 2rem;
+}
+
+.p-\[1rem\] {
+  padding: 1rem;
 }
 
 .px-\[1\.8rem\] {
@@ -766,12 +828,31 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-\[\] {
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.px-\[\] {
+  padding-left: ;
+  padding-right: ;
+}
+
+.px-\[1\.2rem\] {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
 
 .pr-\[0\.7rem\] {
   padding-right: 0.7rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-peydaWeb {
@@ -794,6 +875,25 @@ video {
 .text-\[\#fff\] {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\#f5f5f5\] {
+  --tw-text-opacity: 1;
+  color: rgb(245 245 245 / var(--tw-text-opacity));
+}
+
+.text-\[\#ebebeb\] {
+  --tw-text-opacity: 1;
+  color: rgb(235 235 235 / var(--tw-text-opacity));
+}
+
+.text-\[\#787775\] {
+  --tw-text-opacity: 1;
+  color: rgb(120 119 117 / var(--tw-text-opacity));
 }
 
 .opacity-50 {
@@ -883,8 +983,8 @@ body {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(216 213 213 / var(--tw-border-opacity));
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -1001,6 +1101,15 @@ body {
   padding-bottom: 1rem;
 }
 
+/*************************** Price Range Slider Style */
+
+/*************************** Brand modal style */
+
+.brand-modal {
+  height: 100vh;
+  width: 360px;
+}
+
 /* @media (max-width: 900px) {
   .profile-text,
   .profile-icon,
@@ -1048,4 +1157,17 @@ body {
 .hover\:text-gray-500:hover {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.focus\:border:focus {
+  border-width: 1px;
+}
+
+.focus\:border-none:focus {
+  border-style: none;
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
