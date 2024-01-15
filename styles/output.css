@@ -544,6 +544,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -582,6 +586,22 @@ video {
 
 .top-\[15\%\] {
   top: 15%;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-\[\] {
+  bottom: ;
+}
+
+.bottom-\[10\] {
+  bottom: 10;
+}
+
+.bottom-\[10\%\] {
+  bottom: 10%;
 }
 
 .col-start-1 {
@@ -708,6 +728,10 @@ video {
   margin-top: 4rem;
 }
 
+.mb-\[10\%\] {
+  margin-bottom: 10%;
+}
+
 .block {
   display: block;
 }
@@ -740,6 +764,10 @@ video {
   height: 100%;
 }
 
+.h-\[358px\] {
+  height: 358px;
+}
+
 .w-\[180px\] {
   width: 180px;
 }
@@ -760,6 +788,10 @@ video {
   width: 330px;
 }
 
+.w-\[335px\] {
+  width: 335px;
+}
+
 .w-\[380px\] {
   width: 380px;
 }
@@ -774,6 +806,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -812,6 +848,10 @@ video {
   border-radius: 40px;
 }
 
+.rounded-\[50px\] {
+  border-radius: 50px;
+}
+
 .rounded-\[8px\] {
   border-radius: 8px;
 }
@@ -846,6 +886,11 @@ video {
 .bg-\[\#afe600\] {
   --tw-bg-opacity: 1;
   background-color: rgb(175 230 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ebebeb\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 235 235 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#f5f5f5\] {
@@ -932,6 +977,21 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -942,6 +1002,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-center {
@@ -1203,9 +1267,11 @@ body {
 
 /*************************** Brand modal style */
 
-/* .backdrop{
-  @apply backdrop-blur-[20px] 
-} */
+.backdrop {
+  --tw-backdrop-blur: blur(10px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
 
 @media (max-width:900px) {
   .fav-cars-sec div:nth-of-type(2) {

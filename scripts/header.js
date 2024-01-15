@@ -21,7 +21,7 @@ const filterWrapper = document.querySelector(".filters-wrapper-right");
 const brandModal = document.querySelector(".brand-modal");
 const body = document.querySelector("body");
 const backdrop = document.querySelector(".backdrop");
-const closeModal = document.querySelector(".brand-modal-close")
+const closeModal = document.querySelector(".brand-modal-close");
 searchBox.addEventListener("click", () => {
   searchModal.style.display = "block";
 });
@@ -41,13 +41,16 @@ searchBox.addEventListener("click", () => {
 filterWrapper.addEventListener("click", () => {
   brandModal.style.display = "block";
   backdrop.style.display = "block";
+  body.style.overflowY = "hidden";
 });
 
 backdrop.addEventListener("click", () => {
   brandModal.style.display = "none";
   backdrop.style.display = "none";
+  body.style.overflowY = "scroll";
 });
-closeModal.addEventListener("click",()=>{
+closeModal.addEventListener("click", () => {
   brandModal.style.display = "none";
   backdrop.style.display = "none";
-})
+  body.style.overflowY = "scroll";
+});
