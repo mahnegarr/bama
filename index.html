@@ -127,7 +127,7 @@
       <div
         class="filters-wrapper w-[80%] bg-[#fff] grid grid-cols-3 mx-auto mt-[1rem] px-[1.8rem] py-[2rem] z-1"
       >
-        <div class="filters-wrapper-right col-start-1 col-end-2">
+        <div class="filters-wrapper-right col-start-1 col-end-2 cursor-pointer">
           <p>برند،مدل</p>
           <span class="font-peydaWeb text-[14px] text-[#494A48]"
             >تمام برند‌ها، مدل‌ها</span
@@ -222,7 +222,12 @@
     </div>
 
     <!-------------------- Brand modal section -->
-    <div class="brand-modal w-[380px] h-[100vh] mx-auto px-4">
+    <div
+      class="backdrop hidden absolute top-0 left-0 w-full h-full z-2 bg-[#33333333] blur-[2px]"
+    ></div>
+    <div
+      class="brand-modal w-[380px] h-auto mx-auto px-4 fixed left-[38%] bg-white top-0 z-4 hidden"
+    >
       <h2 class="pt-4">انتخاب برند و مدل</h2>
       <p class="font-peydaWeb mt-4">برند و مدل مورد نظر خود را انتخاب کنید.</p>
       <div class="brand-modal-searchbox">
@@ -231,7 +236,7 @@
           name=""
           id=""
           placeholder="جستجو برند و مدل"
-          class="focus:outline-none w-[330px] my-[1.5rem] bg-[#f5f5f5] py-[.8rem] px-[1.2rem] rounded-[40px]"
+          class="focus:outline-none w-[330px] mt-[1.5rem] bg-[#f5f5f5] py-[.8rem] px-[1.2rem] rounded-[40px]"
         />
         <i class="fas fa-search text-[#787775] relative left-[10%]"></i>
       </div>
@@ -350,7 +355,7 @@
         </div>
       </div>
       <button
-        class="border-[1px] border-[hsl(0,0%,83%)] ml-4 py-3 px-14 rounded-[40px]"
+        class="brand-modal-close border-[1px] border-[hsl(0,0%,83%)] ml-4 py-3 my-3 px-14 rounded-[40px]"
       >
         بستن
       </button>
@@ -361,6 +366,14 @@
         انتخاب
       </button>
     </div>
+    <section>
+      <h2 class="text-[1.5rem]">محبوبترین مدل‌ها</h2>
+      <div class="flex items-center">
+        <p class="text-[#3E1FFA] font-peydaWeb">تماشای همه</p>
+        <i class="fas fa-arrow-left text-[#3E1FFA]"></i>
+      </div>
+      <div></div>
+    </section>
   </body>
   <script src="./scripts/header.js"></script>
 </html>

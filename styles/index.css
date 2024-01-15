@@ -91,7 +91,9 @@ body {
 /*************************** Price Range Slider Style */
 
 /*************************** Brand modal style */
-
+.backdrop{
+  @apply backdrop-blur-[20px] 
+}
 
 /* @media (max-width: 900px) {
   .profile-text,
