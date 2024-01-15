@@ -91,10 +91,18 @@ body {
 /*************************** Price Range Slider Style */
 
 /*************************** Brand modal style */
-.backdrop{
+/* .backdrop{
   @apply backdrop-blur-[20px] 
-}
+} */
 
+@media (max-width:900px) {
+  .fav-cars-sec div:nth-of-type(2){
+    @apply flex pr-4
+  }
+  .fav-cars-sec a{
+    @apply pl-3
+  }
+}
 /* @media (max-width: 900px) {
   .profile-text,
   .profile-icon,
