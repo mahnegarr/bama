@@ -91,9 +91,7 @@ body {
 /*************************** Price Range Slider Style */
 
 /*************************** Brand modal style */
-.brand-modal{
-  @apply w-[360px] h-[100vh]
-}
+
 
 /* @media (max-width: 900px) {
   .profile-text,
