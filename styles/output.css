@@ -607,6 +607,16 @@ video {
   margin-bottom: 0px;
 }
 
+.my-\[2rem\] {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-\[1\.5rem\] {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .ml-\[15rem\] {
   margin-left: 15rem;
 }
@@ -641,6 +651,94 @@ video {
 
 .mt-\[4rem\] {
   margin-top: 4rem;
+}
+
+.mr-7 {
+  margin-right: 1.75rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.ml-\[-1rem\] {
+  margin-left: -1rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.ml-16 {
+  margin-left: 4rem;
+}
+
+.ml-\[\] {
+  margin-left: ;
+}
+
+.ml-\[40\%\] {
+  margin-left: 40%;
+}
+
+.ml-\[60\%\] {
+  margin-left: 60%;
+}
+
+.ml-\[70\%\] {
+  margin-left: 70%;
+}
+
+.ml-\[\%\] {
+  margin-left: %;
+}
+
+.ml-\[65\%\] {
+  margin-left: 65%;
+}
+
+.ml-\[61\%\] {
+  margin-left: 61%;
+}
+
+.ml-\[66\%\] {
+  margin-left: 66%;
+}
+
+.ml-\[55\%\] {
+  margin-left: 55%;
+}
+
+.ml-\[62\%\] {
+  margin-left: 62%;
+}
+
+.ml-\[63\%\] {
+  margin-left: 63%;
+}
+
+.ml-\[64\%\] {
+  margin-left: 64%;
+}
+
+.ml-\[56\%\] {
+  margin-left: 56%;
+}
+
+.ml-\[71\%\] {
+  margin-left: 71%;
+}
+
+.mb-\[\] {
+  margin-bottom: ;
 }
 
 .block {
@@ -699,6 +797,10 @@ video {
   width: 100px;
 }
 
+.w-\[1rem\] {
+  width: 1rem;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -719,6 +821,10 @@ video {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -737,6 +843,14 @@ video {
 
 .border-\[1px\] {
   border-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
 }
 
 .border-\[\#e5e6e4\] {
@@ -843,6 +957,11 @@ video {
   padding-right: 1.2rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -855,6 +974,10 @@ video {
   text-align: center;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .font-peydaWeb {
   font-family: PeydaWeb;
 }
@@ -865,6 +988,10 @@ video {
 
 .text-\[2rem\] {
   font-size: 2rem;
+}
+
+.text-\[1rem\] {
+  font-size: 1rem;
 }
 
 .text-\[\#494A48\] {
