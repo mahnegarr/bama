@@ -1,17 +1,5 @@
-// const menuItems = document.querySelectorAll(".menu-items ul li");
-// const subMenus = document.querySelector(".submenu");
-// menuItems.forEach((item) => {
-//   item.addEventListener("mouseover", ()=>{
-//     menuItemsHandler(subMenus)
-//   });
-// });
 
-// function menuItemsHandler(elements) {
-
-//     elements.style.display = "block";
-
-// }
-import allData from "./car-widget-data"
+import {carData} from "./car-widget-data.js"
 const searchBox = document.querySelector(".search-box");
 const searchModal = document.querySelector(".search-modal");
 const crossIcon = document.querySelector(".fa-times");
@@ -22,6 +10,7 @@ const brandModal = document.querySelector(".brand-modal");
 const body = document.querySelector("body");
 const backdrop = document.querySelector(".backdrop");
 const closeModal = document.querySelector(".brand-modal-close");
+const ulElement = document.querySelector(".splide-container")
 searchBox.addEventListener("click", () => {
   searchModal.style.display = "block";
 });
@@ -55,24 +44,21 @@ closeModal.addEventListener("click", () => {
   body.style.overflowY = "scroll";
 });
 
-allData.forEach(car => {
+carData.forEach(car => {
   let li = document.createElement("li");
-  li.innerHTML = `<li>
+  li.classList.add("splide-li")
+  li.innerHTML = `
   <div>
     <a href="#">
       <span>
-        <img
-          class="w-8"
-          src="./assets/volvo.svg "
-          alt="volvo-car-icon"
-        />
+        ${car.image}
       </span>
       <span>
-        <span>ولوو XC90</span>
-        <span>اینسکریپشن</span>
+        <span>${car.name}</span>
+        <span>${car.title}</span>
       </span>
       <span>
-        <span> 2.56% </span>
+        <span>${car.percent}</span>
         <i class="fa-solid fa-caret-up"></i>
         <svg
           data-v-7a9905c6=""
@@ -85,9 +71,9 @@ allData.forEach(car => {
             fill="currentColor"
           ></path>
         </svg>
-        <span>20,000,000,000</span>
+        <span>${car.price}</span>
       </span>
     </a>
-  </div>
-</li>`
+  </div>`
+  ulElement.appendChild(li)
 });

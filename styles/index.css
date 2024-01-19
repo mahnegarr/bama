@@ -34,21 +34,9 @@
       format("svg");
 }
 
-/* @font-face {
-  font-family: "Yekan";
-  src: url("../assets/yekan/Yekan.eot");
-  src: url("../assets/yekan/Yekan.eot?#iefix") format("embedded-opentype"),
-    url("../assets/yekan/Yekan.woff2") format("woff2"),
-    url("../assets/yekan/Yekan.woff") format("woff"),
-    url("../assets/yekan/Yekan.ttf") format("truetype"),
-    url("../assets/yekan/Yekan.svg#Yekan") format("svg");
-  font-weight: normal;
-  font-style: normal;
-} */
-
 @font-face {
   font-family: "yekan";
-  src: url("../assets/YEKAN\ PLUS.TTF")format("truetype");
+  src: url("../assets/YEKAN\ PLUS.TTF") format("truetype");
 }
 
 * {
@@ -109,11 +97,46 @@ body {
   @apply backdrop-blur-[10px];
 }
 
-/*************************** News container */
+/*************************** Price and technical widgets */
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.splide-li {
+  @apply h-[120px] bg-red-500 my-0 mx-3;
+}
 
-/* .news-container{
-  h-[278px] border-[1px] grid mb-[10%]
-} */
+.splide-container {
+  display: flex;
+  animation: 22s slide infinite linear;
+}
+.splide:hover .splide-container{
+animation-play-state: paused;
+}
+.splide::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1rem;
+  height: 100%;
+  background: red;
+  content: "";
+  z-index: 2;
+}
+.splide::after{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1rem;
+  height: 100%;
+  background: red;
+  content: "";
+  z-index: 2;
+}
 @media (max-width: 900px) {
   .fav-cars-sec div:nth-of-type(2) {
     @apply flex pr-4;
