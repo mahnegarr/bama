@@ -114,23 +114,20 @@ body {
   display: flex;
   animation: 22s slide infinite linear;
 }
-.splide:hover .splide-container{
-animation-play-state: paused;
+.splide:hover .splide-container {
+  animation-play-state: paused;
 }
-.splide::before{
-  position: absolute;
-  top: 0;
+.splide::before {
   left: 0;
-  width: 1rem;
-  height: 100%;
-  background: red;
-  content: "";
-  z-index: 2;
 }
-.splide::after{
+.splide::after {
+  right: 0;
+}
+
+.splide::before,
+.splide::after {
   position: absolute;
   top: 0;
-  right: 0;
   width: 1rem;
   height: 100%;
   background: red;

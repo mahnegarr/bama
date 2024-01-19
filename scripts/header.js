@@ -11,6 +11,7 @@ const body = document.querySelector("body");
 const backdrop = document.querySelector(".backdrop");
 const closeModal = document.querySelector(".brand-modal-close");
 const ulElement = document.querySelector(".splide-container")
+
 searchBox.addEventListener("click", () => {
   searchModal.style.display = "block";
 });
