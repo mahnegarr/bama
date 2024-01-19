@@ -19,29 +19,43 @@
       format("svg");
 }
 
-
 @font-face {
   font-family: "PeydaWeb";
   src: url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.eot");
-  src: url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.svg#PeydaWeb")format("svg");
+  src: url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.svg#PeydaWeb")
+      format("svg");
 }
-/* :root {
-  --primary-color: #afe600;
-  --secondary-color: #3e1ffa;
-  --white: #fff;
-  --smoke-color: #ebebeb;
-  --red: #cd204a;
+
+/* @font-face {
+  font-family: "Yekan";
+  src: url("../assets/yekan/Yekan.eot");
+  src: url("../assets/yekan/Yekan.eot?#iefix") format("embedded-opentype"),
+    url("../assets/yekan/Yekan.woff2") format("woff2"),
+    url("../assets/yekan/Yekan.woff") format("woff"),
+    url("../assets/yekan/Yekan.ttf") format("truetype"),
+    url("../assets/yekan/Yekan.svg#Yekan") format("svg");
+  font-weight: normal;
+  font-style: normal;
 } */
+
+@font-face {
+  font-family: "yekan";
+  src: url("../assets/YEKAN\ PLUS.TTF")format("truetype");
+}
 
 * {
   @apply box-border p-0 m-0;
 }
 body {
-  @apply font-peyda max-w-[1920px]  ;
+  @apply font-peyda max-w-[1920px];
 }
 
 /*********** Header styles */
@@ -56,43 +70,43 @@ body {
   @apply flex items-center ml-[-6rem] mr-[2rem] py-[0.6rem] px-[1rem] border-[1px] border-[#D8D5D5] rounded-[50px] cursor-pointer hover:bg-[#ebebeb];
 }
 
-.icon-container{
-    @apply w-[3rem] h-[3rem] rounded-[50%] ml-[1rem] bg-[#afe600]
+.icon-container {
+  @apply w-[3rem] h-[3rem] rounded-[50%] ml-[1rem] bg-[#afe600];
 }
 
 /************************************ below header section styles */
 
-.top-section{
-    @apply w-full h-[450px] bg-[url(../assets/top-sec.webp)] bg-no-repeat bg-center bg-cover
+.top-section {
+  @apply w-full h-[450px] bg-[url(../assets/top-sec.webp)] bg-no-repeat bg-center bg-cover;
 }
-.search-box{
-    @apply w-[50%] bg-[#fff] my-[0.8rem] mx-0 py-[.7rem] px-[1.5rem] flex justify-between text-center rounded-[50px]
+.search-box {
+  @apply w-[50%] bg-[#fff] my-[0.8rem] mx-0 py-[.7rem] px-[1.5rem] flex justify-between text-center rounded-[50px];
 }
 
-.search-items-container{
-    @apply w-[57%] flex justify-evenly text-center items-center m-auto
+.search-items-container {
+  @apply w-[57%] flex justify-evenly text-center items-center m-auto;
 }
-.search-items-container a{
-    @apply no-underline text-[#9c9b9a] text-[16px] bg-[#fff] py-[.3rem] px-[.5rem] rounded-[20px] cursor-pointer
+.search-items-container a {
+  @apply no-underline text-[#9c9b9a] text-[16px] bg-[#fff] py-[.3rem] px-[.5rem] rounded-[20px] cursor-pointer;
 }
 
 /***************************** start of search modal */
 
-.search-modal{
-    @apply hidden fixed top-0 left-0 w-[100vw] h-auto bg-[#fff] text-[16px] overflow-y-hidden transition-all duration-[400] ease-in-out z-10 
+.search-modal {
+  @apply hidden fixed top-0 left-0 w-[100vw] h-auto bg-[#fff] text-[16px] overflow-y-hidden transition-all duration-[400] ease-in-out z-10;
 }
-.search-modal-svg img{
-    @apply w-[400px] h-[400px] flex justify-center items-center mx-auto 
+.search-modal-svg img {
+  @apply w-[400px] h-[400px] flex justify-center items-center mx-auto;
 }
-.car-toggle{
-    @apply relative flex items-center px-[1.4rem] py-[1rem] rounded-[30px] cursor-pointer bg-[#f5f5f5] ml-4
+.car-toggle {
+  @apply relative flex items-center px-[1.4rem] py-[1rem] rounded-[30px] cursor-pointer bg-[#f5f5f5] ml-4;
 }
 
 /*************************** Price Range Slider Style */
 
 /*************************** Brand modal style */
-.backdrop{
-  @apply backdrop-blur-[10px] 
+.backdrop {
+  @apply backdrop-blur-[10px];
 }
 
 /*************************** News container */
@@ -100,12 +114,12 @@ body {
 /* .news-container{
   h-[278px] border-[1px] grid mb-[10%]
 } */
-@media (max-width:900px) {
-  .fav-cars-sec div:nth-of-type(2){
-    @apply flex pr-4
+@media (max-width: 900px) {
+  .fav-cars-sec div:nth-of-type(2) {
+    @apply flex pr-4;
   }
-  .fav-cars-sec a{
-    @apply pl-3
+  .fav-cars-sec a {
+    @apply pl-3;
   }
 }
 /* @media (max-width: 900px) {

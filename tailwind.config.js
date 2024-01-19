@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         peyda: ["PeydaWeb SemBd"],
-        peydaWeb:["PeydaWeb"]
+        peydaWeb:["PeydaWeb"],
+        yekan:["yekan"]
       },
     },
   },

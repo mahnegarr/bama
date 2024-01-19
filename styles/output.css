@@ -556,10 +556,6 @@ video {
   position: relative;
 }
 
-.bottom-\[32\%\] {
-  bottom: 32%;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -570,6 +566,10 @@ video {
 
 .left-\[38\%\] {
   left: 38%;
+}
+
+.left-\[50\%\] {
+  left: 50%;
 }
 
 .right-\[12\.5\%\] {
@@ -588,16 +588,12 @@ video {
   top: 15%;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
+.top-\[50\%\] {
+  top: 50%;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
-.col-span-1 {
-  grid-column: span 1 / span 1;
+.z-0 {
+  z-index: 0;
 }
 
 .col-start-1 {
@@ -648,6 +644,14 @@ video {
   margin-bottom: 5%;
 }
 
+.mb-\[6\%\] {
+  margin-bottom: 6%;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -682,6 +686,10 @@ video {
 
 .ml-\[7rem\] {
   margin-left: 7rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
 }
 
 .mr-2 {
@@ -728,10 +736,6 @@ video {
   margin-top: 4rem;
 }
 
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
 .block {
   display: block;
 }
@@ -752,6 +756,10 @@ video {
   display: none;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-\[278px\] {
   height: 278px;
 }
@@ -764,20 +772,16 @@ video {
   height: 358px;
 }
 
+.h-\[60px\] {
+  height: 60px;
+}
+
 .h-\[70px\] {
   height: 70px;
 }
 
-.h-\[92px\] {
-  height: 92px;
-}
-
 .h-auto {
   height: auto;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .h-fit {
@@ -785,12 +789,28 @@ video {
   height: fit-content;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.max-h-\[33\%\] {
+  max-height: 33%;
+}
+
 .w-5 {
   width: 1.25rem;
 }
 
+.w-\[1200px\] {
+  width: 1200px;
+}
+
 .w-\[180px\] {
   width: 180px;
+}
+
+.w-\[20px\] {
+  width: 20px;
 }
 
 .w-\[270px\] {
@@ -833,8 +853,8 @@ video {
   width: 100%;
 }
 
-.w-4 {
-  width: 1rem;
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -845,16 +865,6 @@ video {
   list-style-type: none;
 }
 
-.columns-1 {
-  -moz-columns: 1;
-       columns: 1;
-}
-
-.columns-2 {
-  -moz-columns: 2;
-       columns: 2;
-}
-
 .grid-flow-col {
   grid-auto-flow: column;
 }
@@ -863,16 +873,12 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-end {
@@ -881,10 +887,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -903,17 +905,16 @@ video {
   gap: 1rem;
 }
 
-.gap-3 {
-  gap: 0.75rem;
+.overflow-hidden {
+  overflow: hidden;
 }
 
-.gap-2 {
-  gap: 0.5rem;
+.text-ellipsis {
+  text-overflow: ellipsis;
 }
 
-.gap-x-4 {
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded-\[40px\] {
@@ -939,6 +940,11 @@ video {
 .border-\[\#e5e6e4\] {
   --tw-border-opacity: 1;
   border-color: rgb(229 230 228 / var(--tw-border-opacity));
+}
+
+.border-\[\#ebebeb\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(235 235 235 / var(--tw-border-opacity));
 }
 
 .border-\[\#fff\] {
@@ -995,85 +1001,17 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\] {
-  background-color: url;
-}
-
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-yellow-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\.\/\)\] {
-  background-image: url(./);
-}
-
-.bg-\[url\(\.\/assets\/\)\] {
-  background-image: url(./assets/);
-}
-
-.bg-\[url\(\.\/assets\/news\)\] {
-  background-image: url(./assets/news);
-}
-
-.bg-\[url\(\.\/assets\/news-1\.svg\)\] {
-  background-image: url(./assets/news-1.svg);
-}
-
-.bg-\[url\(\)\] {
-  background-image: url();
-}
-
-.bg-\[url\(\"\.\/a\"\)\] {
-  background-image: url("./a");
-}
-
-.bg-\[url\(\"\.\/assets\"\)\] {
-  background-image: url("./assets");
-}
-
-.bg-\[url\(\"\.\/assets\/news-1\.svg\"\)\] {
-  background-image: url("./assets/news-1.svg");
-}
-
-.bg-\[url\(\.\)\] {
-  background-image: url(.);
-}
-
-.bg-\[url\(\.\.\/\)\] {
-  background-image: url(../);
-}
-
-.bg-\[url\(\.\.\/assets\)\] {
-  background-image: url(../assets);
-}
-
-.bg-\[url\(\.\.\/assets\/news-1\.svg\)\] {
-  background-image: url(../assets/news-1.svg);
-}
-
-.bg-\[url\(\.\.\/assets\/news-1\.webp\)\] {
-  background-image: url(../assets/news-1.webp);
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-\[300px\] {
-  background-position: 300px;
-}
-
 .p-3 {
   padding: 0.75rem;
 }
 
 .p-4 {
   padding: 1rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .px-14 {
@@ -1106,6 +1044,11 @@ video {
   padding-right: 3rem;
 }
 
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1129,26 +1072,6 @@ video {
 .py-\[2rem\] {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .pl-2 {
@@ -1179,12 +1102,20 @@ video {
   font-family: PeydaWeb;
 }
 
+.font-yekan {
+  font-family: yekan;
+}
+
 .text-\[1\.5rem\] {
   font-size: 1.5rem;
 }
 
 .text-\[12px\] {
   font-size: 12px;
+}
+
+.text-\[13px\] {
+  font-size: 13px;
 }
 
 .text-\[14px\] {
@@ -1199,9 +1130,22 @@ video {
   font-size: 2rem;
 }
 
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
 .text-\[\#1f1f1e\] {
   --tw-text-opacity: 1;
   color: rgb(31 31 30 / var(--tw-text-opacity));
+}
+
+.text-\[\#333331\] {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 49 / var(--tw-text-opacity));
 }
 
 .text-\[\#3E1FFA\] {
@@ -1219,6 +1163,11 @@ video {
   color: rgb(120 119 117 / var(--tw-text-opacity));
 }
 
+.text-\[\#acadac\] {
+  --tw-text-opacity: 1;
+  color: rgb(172 173 172 / var(--tw-text-opacity));
+}
+
 .text-\[\#fff\] {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1227,6 +1176,10 @@ video {
 .text-\[hsl\(90\2c 2\%\2c 79\%\)\] {
   --tw-text-opacity: 1;
   color: hsl(90 2% 79% / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .opacity-50 {
@@ -1264,20 +1217,35 @@ video {
 
   src: url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.eot");
 
-  src: url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.svg#PeydaWeb")format("svg");
+  src: url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.svg#PeydaWeb")
+      format("svg");
 }
 
-/* :root {
-  --primary-color: #afe600;
-  --secondary-color: #3e1ffa;
-  --white: #fff;
-  --smoke-color: #ebebeb;
-  --red: #cd204a;
+/* @font-face {
+  font-family: "Yekan";
+  src: url("../assets/yekan/Yekan.eot");
+  src: url("../assets/yekan/Yekan.eot?#iefix") format("embedded-opentype"),
+    url("../assets/yekan/Yekan.woff2") format("woff2"),
+    url("../assets/yekan/Yekan.woff") format("woff"),
+    url("../assets/yekan/Yekan.ttf") format("truetype"),
+    url("../assets/yekan/Yekan.svg#Yekan") format("svg");
+  font-weight: normal;
+  font-style: normal;
 } */
+
+@font-face {
+  font-family: "yekan";
+
+  src: url("../assets/YEKAN\ PLUS.TTF")format("truetype");
+}
 
 * {
   margin: 0px;
@@ -1455,7 +1423,7 @@ body {
   h-[278px] border-[1px] grid mb-[10%]
 } */
 
-@media (max-width:900px) {
+@media (max-width: 900px) {
   .fav-cars-sec div:nth-of-type(2) {
     display: flex;
     padding-right: 1rem;
