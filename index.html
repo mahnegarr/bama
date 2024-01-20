@@ -63,7 +63,7 @@
         </div>
       </div>
     </header>
-    <div class="car-sub-menu submenu hidden">
+    <div class="car-sub-menu submenu">
       <div class="car-sub-menu_top">
         <ul>
           <a><i class="fas fa-car"></i> خرید خودرو</a>
@@ -208,7 +208,7 @@
         </div>
         <input
           type="text"
-          class="search-modal-input bg-[#f5f5f5] ml-[15rem] w-[50%] rounded-[40px] placeholder:pr-4"
+          class="search-modal-input bg-[#f5f5f5] ml-[15rem] w-[50%] caret-transparent rounded-[40px] focus:outline-none placeholder:pr-4 focus:pr-8 focus:caret-black focus:placeholder:pr-0"
           placeholder="در باما جستجو کنید"
         />
         <i class="fas fa-times cursor-pointer mt-3 text-[2rem]"></i>
@@ -370,7 +370,7 @@
     <section class="fav-cars-sec mt-[10%] mb-[5%] py-0 px-8">
       <div class="grid grid-flow-col justify-between">
         <h2 class="text-[1.5rem]">محبوبترین مدل‌ها</h2>
-        <div class="flex items-center mt-3 mb-8 cursor-pointer">
+        <div class="flex items-center mt-3 mb-8 cursor-pointer hover:opacity-70">
           <p class="text-[#3E1FFA] font-peydaWeb">تماشای همه</p>
           <i class="fas fa-arrow-left text-[#3E1FFA] mr-2"></i>
         </div>
@@ -396,7 +396,7 @@
             <h1 class="text-[20px]">بررسی مشخصات فنی خودرو</h1>
           </div>
           <img src="./assets/car-svg.svg" alt="car" class="pt-6" />
-          <div class="flex items-center mt-11 mb-8 cursor-pointer">
+          <div class="flex items-center mt-11 mb-8 cursor-pointer hover:opacity-70">
             <p class="text-[#3E1FFA] font-peydaWeb pl-2">تماشای همه</p>
             <i class="fas fa-arrow-left text-[#3E1FFA]"></i>
           </div>
@@ -415,7 +415,7 @@
             <ul class="splide-container"></ul>
           </div>
 
-          <div class="flex items-center mt-3 cursor-pointer">
+          <div class="flex items-center mt-3 cursor-pointer hover:opacity-70">
             <p class="text-[#3E1FFA] font-peydaWeb">تماشای همه</p>
             <i class="fas fa-arrow-left text-[#3E1FFA] mr-2"></i>
           </div>
@@ -428,7 +428,7 @@
       <div class="grid grid-flow-col justify-between">
         <h2 class="text-[1.5rem]">اخبار</h2>
         <div class="cursor-pointer flex items-center h-fit">
-          <a href="#">
+          <a href="#" class="hover:opacity-70">
             <p class="text-[#3E1FFA] font-peydaWeb inline-block align-middle">
               تماشای همه
             </p>

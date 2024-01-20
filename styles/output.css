@@ -1240,6 +1240,10 @@ video {
   color: hsl(90 2% 79% / var(--tw-text-opacity));
 }
 
+.caret-transparent {
+  caret-color: transparent;
+}
+
 .opacity-50 {
   opacity: 0.5;
 }
@@ -1354,6 +1358,8 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(175 230 0 / var(--tw-bg-opacity));
 }
+
+/************************************ Header's submenus */
 
 /************************************ below header section styles */
 
@@ -1501,7 +1507,7 @@ body {
 
 .splide-container {
   display: flex;
-  animation: 5s slide infinite linear;
+  animation: 22s slide infinite linear;
 }
 
 @keyframes slide {
@@ -1596,7 +1602,27 @@ body {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.hover\:opacity-70:hover {
+  opacity: 0.7;
+}
+
+.focus\:pr-8:focus {
+  padding-right: 2rem;
+}
+
+.focus\:caret-black:focus {
+  caret-color: #000;
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.focus\:placeholder\:pr-0:focus::-moz-placeholder {
+  padding-right: 0px;
+}
+
+.focus\:placeholder\:pr-0:focus::placeholder {
+  padding-right: 0px;
 }
