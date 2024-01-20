@@ -12,6 +12,10 @@ const closeModal = document.querySelector(".brand-modal-close");
 const ulElement = document.querySelector(".splide-container");
 const carSubmenu = document.querySelector(".car-sub-menu");
 const carLi = document.getElementById("car");
+const motorcycleLi = document.getElementById("motorcycle");
+const motorSubmenu = document.querySelector(".motor-sub-menu");
+const heavyCarLi = document.getElementById("heavy-car");
+const heavySubmenu = document.querySelector(".heavy-sub-menu")
 
 searchBox.addEventListener("click", () => {
   searchModal.style.display = "block";
@@ -81,6 +85,22 @@ carData.forEach((car) => {
 });
 
 carLi.addEventListener("mouseover", () => {
-  carSubmenu.style.display =
-    carSubmenu.style.display === "block" ? "none" : "block";
+  carSubmenu.style.display = "block";
+});
+carLi.addEventListener("mouseout", () => {
+  carSubmenu.style.display = "none";
+});
+
+motorcycleLi.addEventListener("mouseover", () => {
+  motorSubmenu.style.display = "block";
+});
+motorcycleLi.addEventListener("mouseout", () => {
+  motorSubmenu.style.display = "none";
+});
+
+heavyCarLi.addEventListener("mouseover", () => {
+  heavySubmenu.style.display = "block";
+});
+heavyCarLi.addEventListener("mouseout", () => {
+  heavySubmenu.style.display = "none";
 });
