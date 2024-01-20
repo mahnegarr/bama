@@ -15,7 +15,9 @@ const carLi = document.getElementById("car");
 const motorcycleLi = document.getElementById("motorcycle");
 const motorSubmenu = document.querySelector(".motor-sub-menu");
 const heavyCarLi = document.getElementById("heavy-car");
-const heavySubmenu = document.querySelector(".heavy-sub-menu")
+const heavySubmenu = document.querySelector(".heavy-sub-menu");
+const bamaLi = document.getElementById("bama");
+const bamaSubmenu = document.querySelector(".bama-sub-menu")
 
 searchBox.addEventListener("click", () => {
   searchModal.style.display = "block";
@@ -103,4 +105,11 @@ heavyCarLi.addEventListener("mouseover", () => {
 });
 heavyCarLi.addEventListener("mouseout", () => {
   heavySubmenu.style.display = "none";
+});
+
+bamaLi.addEventListener("mouseover", () => {
+  bamaSubmenu.style.display = "block";
+});
+bamaLi.addEventListener("mouseout", () => {
+  bamaSubmenu.style.display = "none";
 });
