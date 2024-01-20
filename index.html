@@ -22,7 +22,50 @@
           </button>
           <div class="menu-items">
             <ul class="flex flex-row">
-              <li id="car">خودرو</li>
+              <li id="car">
+                <span>خودرو</span>
+                <div
+                class="car-sub-menu hidden bg-[#ebebeb] w-[220px] flex flex-col absolute right-[9.5%] top-[14.2%] outline-8 outline-red-800 z-10"
+                >
+                <span class="flex h-[2px] z-10 w-7 mr-7 bg-black"></span>
+                <div class="car-sub-menu_top p-2">
+                  <ul class="flex flex-col">
+                    <a><i class="fas fa-car pl-2"></i> خرید خودرو</a>
+                    <a><i class="fas fa-plus pl-2"></i> ثبت آگهی خودرو</a>
+                    <a><i class="fa-solid fa-chart-line pl-2"></i>قیمت روز خودرو</a>
+                    <a>
+                      <div class="car-sub-menu_info-icon flex">
+                        <svg
+                          data-v-452188e2=""
+                          class="pl-2"
+                          width="1.8rem"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M9 19h7l3-3V8H9l-2 2H3v7h4zm-4-7h2.83l.59-.59L9.83 10H17v5.17L15.17 17H9.83l-1.41-1.41-.59-.59H5zm-5-2h2v7H0zm13-3V5h-3V3h8v2h-3v2zm9 1h2v8h-2v-3h-2v-2h2z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                        <span> مشخصات فنی خودرو </span>
+                      </div>
+                    </a>
+                    <a
+                      ><i class="fa fa-bullhorn pl-2" aria-hidden="true"></i>اخبار
+                      خودرو</a
+                    >
+                  </ul>
+                </div>
+                <span class="line h-2 bg-white"></span>
+                <div class="car-sub-menu_bottom">
+                  <ul class="flex flex-col p-2">
+                    <a>استعلام خلافی خودرو<span class="bg-[#cd204a] text-[10px] text-[#ffff] px-1 rounded-[40px] mr-2">جدید</span></a>
+                    <a>شرایط فروش خودروسازها</a>
+                    <a>ثبت نام نمایشگاه خودرو</a>
+                  </ul>
+                </div>
+              </div>
+              </li>
+
               <li>موتور سیکلت</li>
               <li>سنگین</li>
               <li>باما</li>
@@ -55,7 +98,7 @@
             <a href="#"></a>
             <div class="icon-container">
               <i
-                class="fas fa-plus text-[2rem] relative right-[22%] top-[15%]"
+                class="fas fa-plus text-[1.5rem] relative right-[22%] top-[15%]"
               ></i>
             </div>
             <p>ثبت آگهی</p>
@@ -63,35 +106,6 @@
         </div>
       </div>
     </header>
-    <div class="car-sub-menu submenu">
-      <div class="car-sub-menu_top">
-        <ul>
-          <a><i class="fas fa-car"></i> خرید خودرو</a>
-          <a><i class="fas fa-plus"></i> ثبت آگهی خودرو</a>
-          <a><i class="fa-solid fa-chart-line"></i>قیمت روز خودرو</a>
-          <a>
-            <div class="car-sub-menu_info-icon">
-              <svg data-v-452188e2="" width="1.8rem" viewBox="0 0 24 24">
-                <path
-                  d="M9 19h7l3-3V8H9l-2 2H3v7h4zm-4-7h2.83l.59-.59L9.83 10H17v5.17L15.17 17H9.83l-1.41-1.41-.59-.59H5zm-5-2h2v7H0zm13-3V5h-3V3h8v2h-3v2zm9 1h2v8h-2v-3h-2v-2h2z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-              <span> مشخصات فنی خودرو </span>
-            </div>
-          </a>
-          <a><i class="fa fa-bullhorn" aria-hidden="true"></i>اخبار خودرو</a>
-        </ul>
-      </div>
-      <span class="line"></span>
-      <div class="car-sub-menu_bottom">
-        <ul>
-          <a>استعلام خلافی خودرو<span>جدید</span></a>
-          <a>شرایط فروش خودروسازها</a>
-          <a>ثبت نام نمایشگاه خودرو</a>
-        </ul>
-      </div>
-    </div>
 
     <!--------------------------------- end of header -->
     <section class="top-section">
@@ -370,7 +384,9 @@
     <section class="fav-cars-sec mt-[10%] mb-[5%] py-0 px-8">
       <div class="grid grid-flow-col justify-between">
         <h2 class="text-[1.5rem]">محبوبترین مدل‌ها</h2>
-        <div class="flex items-center mt-3 mb-8 cursor-pointer hover:opacity-70">
+        <div
+          class="flex items-center mt-3 mb-8 cursor-pointer hover:opacity-70"
+        >
           <p class="text-[#3E1FFA] font-peydaWeb">تماشای همه</p>
           <i class="fas fa-arrow-left text-[#3E1FFA] mr-2"></i>
         </div>
@@ -396,7 +412,9 @@
             <h1 class="text-[20px]">بررسی مشخصات فنی خودرو</h1>
           </div>
           <img src="./assets/car-svg.svg" alt="car" class="pt-6" />
-          <div class="flex items-center mt-11 mb-8 cursor-pointer hover:opacity-70">
+          <div
+            class="flex items-center mt-11 mb-8 cursor-pointer hover:opacity-70"
+          >
             <p class="text-[#3E1FFA] font-peydaWeb pl-2">تماشای همه</p>
             <i class="fas fa-arrow-left text-[#3E1FFA]"></i>
           </div>
@@ -409,9 +427,7 @@
             <h1 class="text-[20px]">قیمت روز خودرو</h1>
           </div>
 
-          <div
-            class="splide"
-          >
+          <div class="splide">
             <ul class="splide-container"></ul>
           </div>
 

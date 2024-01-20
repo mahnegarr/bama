@@ -1,5 +1,4 @@
-
-import {carData} from "./car-widget-data.js"
+import { carData } from "./car-widget-data.js";
 const searchBox = document.querySelector(".search-box");
 const searchModal = document.querySelector(".search-modal");
 const crossIcon = document.querySelector(".fa-times");
@@ -10,7 +9,9 @@ const brandModal = document.querySelector(".brand-modal");
 const body = document.querySelector("body");
 const backdrop = document.querySelector(".backdrop");
 const closeModal = document.querySelector(".brand-modal-close");
-const ulElement = document.querySelector(".splide-container")
+const ulElement = document.querySelector(".splide-container");
+const carSubmenu = document.querySelector(".car-sub-menu");
+const carLi = document.getElementById("car");
 
 searchBox.addEventListener("click", () => {
   searchModal.style.display = "block";
@@ -45,9 +46,9 @@ closeModal.addEventListener("click", () => {
   body.style.overflowY = "scroll";
 });
 
-carData.forEach(car => {
+carData.forEach((car) => {
   let li = document.createElement("li");
-  li.classList.add("splide-li")
+  li.classList.add("splide-li");
   li.innerHTML = `
   <div>
     <a href="#">
@@ -75,6 +76,11 @@ carData.forEach(car => {
         <span class="text-[.9rem] mt-1">${car.price}</span>
       </span>
     </a>
-  </div>`
-  ulElement.appendChild(li)
+  </div>`;
+  ulElement.appendChild(li);
+});
+
+carLi.addEventListener("mouseover", () => {
+  carSubmenu.style.display =
+    carSubmenu.style.display === "block" ? "none" : "block";
 });

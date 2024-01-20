@@ -48,7 +48,7 @@ body {
 
 /*********** Header styles */
 .header-container {
-  @apply flex flex-row justify-evenly items-center w-full h-[100px] py-[1rem] px-0;
+  @apply flex flex-row justify-evenly items-center w-full h-[80px] py-[1rem] px-0;
 }
 
 .header-menu-section .menu-items ul li {
@@ -59,13 +59,26 @@ body {
 }
 
 .icon-container {
-  @apply w-[3rem] h-[3rem] rounded-[50%] ml-[1rem] bg-[#afe600];
+  @apply w-[2.2rem] h-[2.2rem] rounded-[50%] ml-[.7rem] bg-[#afe600];
 }
 
 /************************************ Header's submenus */
 
+.car-sub-menu_top a{
+  @apply p-2 cursor-pointer 
+}
 
+.car-sub-menu_top a:hover{
+  @apply bg-[#f5f5f5]
+}
 
+.car-sub-menu_bottom a{
+  @apply p-2 cursor-pointer text-[14px] font-peydaWeb
+}
+
+.car-sub-menu_bottom a:hover{
+  @apply bg-[#f5f5f5]
+}
 /************************************ below header section styles */
 
 .top-section {
