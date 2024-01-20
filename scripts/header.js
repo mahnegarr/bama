@@ -51,28 +51,28 @@ carData.forEach(car => {
   li.innerHTML = `
   <div>
     <a href="#">
-      <span>
+      <span class="splide-img" >
         ${car.image}
       </span>
-      <span>
+      <span class="splide-info" >
         <span>${car.name}</span>
-        <span>${car.title}</span>
+        <span class="splide-title" >${car.title}</span>
       </span>
-      <span>
-        <span>${car.percent}</span>
-        <i class="fa-solid fa-caret-up"></i>
+      <span class="splide-price" >
+        <span class="font-yekan text-[1.2rem] ">${car.percent}</span>
+        <i class="fa-solid fa-caret-up text-[#338e5a] box-content mx-1 text-[1.5rem] mt-1 align-middle"></i>
         <svg
           data-v-7a9905c6=""
           data-v-4640d577=""
           viewBox="0 0 24 24"
-          class="vehicle-tolerance__currency-badge w-6 icon"
+          class="vehicle-tolerance__currency-badge w-6 icon  "
         >
           <path
             d="M12 16c-2.58 0-5.12-.59-7.44-1.73L4 14V9h2v3.73c3.82 1.68 8.18 1.68 12 0V9h2v5l-.56.27A16.82 16.82 0 0 1 12 16M8 9h8v2H8z"
             fill="currentColor"
           ></path>
         </svg>
-        <span>${car.price}</span>
+        <span class="text-[.9rem] mt-1">${car.price}</span>
       </span>
     </a>
   </div>`

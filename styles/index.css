@@ -98,6 +98,32 @@ body {
 }
 
 /*************************** Price and technical widgets */
+.splide{
+  display: flex;
+  padding: 60px 0;
+  position: relative ;
+  white-space: nowrap;
+  overflow: hidden
+}
+.splide-li {
+  @apply h-[120px] my-0 mx-6 ;
+}
+
+
+.splide-info{
+  @apply flex flex-col mt-4 mb-1
+}
+
+.splide-title{
+  @apply text-[12px] text-[#1f1f1e]
+}
+.splide-price{
+  @apply flex items-center
+}
+.splide-container {
+  display: flex;
+  animation: 5s slide infinite linear;
+}
 @keyframes slide {
   from {
     transform: translateX(-100%);
@@ -105,14 +131,6 @@ body {
   to {
     transform: translateX(0);
   }
-}
-.splide-li {
-  @apply h-[120px] bg-red-500 my-0 mx-3;
-}
-
-.splide-container {
-  display: flex;
-  animation: 22s slide infinite linear;
 }
 .splide:hover .splide-container {
   animation-play-state: paused;
@@ -130,10 +148,11 @@ body {
   top: 0;
   width: 1rem;
   height: 100%;
-  background: red;
   content: "";
   z-index: 2;
 }
+
+
 @media (max-width: 900px) {
   .fav-cars-sec div:nth-of-type(2) {
     @apply flex pr-4;
