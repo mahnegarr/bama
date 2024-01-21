@@ -612,6 +612,14 @@ video {
   top: 50%;
 }
 
+.right-\[60\%\] {
+  right: 60%;
+}
+
+.right-\[63\%\] {
+  right: 63%;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -634,6 +642,10 @@ video {
 
 .col-end-4 {
   grid-column-end: 4;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mx-1 {
@@ -659,6 +671,16 @@ video {
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mb-8 {
@@ -801,6 +823,34 @@ video {
   margin-top: 4rem;
 }
 
+.mr-\[-10px\] {
+  margin-right: -10px;
+}
+
+.mr-\[-1rem\] {
+  margin-right: -1rem;
+}
+
+.mr-\[-15px\] {
+  margin-right: -15px;
+}
+
+.mr-\[-12px\] {
+  margin-right: -12px;
+}
+
+.mr-\[-13px\] {
+  margin-right: -13px;
+}
+
+.mr-\[-\.2rem\] {
+  margin-right: -.2rem;
+}
+
+.mr-\[-\.3rem\] {
+  margin-right: -.3rem;
+}
+
 .box-content {
   box-sizing: content-box;
 }
@@ -868,6 +918,26 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
+.h-\[120px\] {
+  height: 120px;
+}
+
+.h-\[80px\] {
+  height: 80px;
+}
+
+.h-\[66px\] {
+  height: 66px;
 }
 
 .max-h-\[33\%\] {
@@ -1195,6 +1265,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .py-\[\.8rem\] {
   padding-top: .8rem;
   padding-bottom: .8rem;
@@ -1208,6 +1283,16 @@ video {
 .py-\[2rem\] {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pl-2 {
@@ -1549,6 +1634,28 @@ body {
 }
 
 .bama-sub-menu_bottom a:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
+.account-sub-menu_top a {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.account-sub-menu_top a:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
+.account-sub-menu_bottom a {
+  cursor: pointer;
+  padding: 0.5rem;
+  font-family: PeydaWeb;
+  font-size: 14px;
+}
+
+.account-sub-menu_bottom a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }

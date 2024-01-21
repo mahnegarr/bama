@@ -130,6 +130,22 @@ body {
   @apply bg-[#f5f5f5]
 }
 
+.account-sub-menu_top a{
+  @apply p-2 cursor-pointer 
+}
+
+.account-sub-menu_top a:hover{
+  @apply bg-[#f5f5f5]
+}
+
+.account-sub-menu_bottom a{
+  @apply p-2 cursor-pointer text-[14px] font-peydaWeb
+}
+
+.account-sub-menu_bottom a:hover{
+  @apply bg-[#f5f5f5]
+}
+
 
 /************************************ below header section styles */
 

@@ -18,6 +18,8 @@ const heavyCarLi = document.getElementById("heavy-car");
 const heavySubmenu = document.querySelector(".heavy-sub-menu");
 const bamaLi = document.getElementById("bama");
 const bamaSubmenu = document.querySelector(".bama-sub-menu");
+const accountElement = document.getElementById("account");
+const accountSubmenu = document.querySelector(".account-sub-menu");
 
 searchBox.addEventListener("click", () => {
   searchModal.style.display = "block";
@@ -112,4 +114,12 @@ bamaLi.addEventListener("mouseover", () => {
 });
 bamaLi.addEventListener("mouseout", () => {
   bamaSubmenu.style.display = "none";
+});
+
+accountElement.addEventListener("mouseover", () => {
+  accountSubmenu.style.display = "block";
+});
+
+accountElement.addEventListener("mouseout", () => {
+  accountSubmenu.style.display = "none";
 });
