@@ -150,7 +150,7 @@ body {
 /************************************ below header section styles */
 
 .top-section {
-  @apply w-full h-[450px] bg-[url(../assets/top-sec.webp)] bg-no-repeat bg-center bg-cover;
+  @apply w-full h-[400px] bg-[url(../assets/top-sec.webp)] bg-no-repeat bg-center bg-cover;
 }
 .search-box {
   @apply w-[50%] bg-[#fff] my-[0.8rem] mx-0 py-[.7rem] px-[1.5rem] flex justify-between text-center rounded-[50px];
