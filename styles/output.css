@@ -588,6 +588,10 @@ video {
   right: 24%;
 }
 
+.right-\[30\%\] {
+  right: 30%;
+}
+
 .right-\[9\.5\%\] {
   right: 9.5%;
 }
@@ -1456,6 +1460,11 @@ body {
 
 /************************************ Header's submenus */
 
+.menu-items li {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .car-sub-menu_top a {
   cursor: pointer;
   padding: 0.5rem;
@@ -1518,6 +1527,28 @@ body {
 }
 
 .heavy-sub-menu_bottom a:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
+.bama-sub-menu_top a {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.bama-sub-menu_top a:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
+.bama-sub-menu_bottom a {
+  cursor: pointer;
+  padding: 0.5rem;
+  font-family: PeydaWeb;
+  font-size: 14px;
+}
+
+.bama-sub-menu_bottom a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }

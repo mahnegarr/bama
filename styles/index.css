@@ -63,7 +63,9 @@ body {
 }
 
 /************************************ Header's submenus */
-
+.menu-items li{
+  @apply py-8
+}
 .car-sub-menu_top a{
   @apply p-2 cursor-pointer 
 }
@@ -111,6 +113,23 @@ body {
 .heavy-sub-menu_bottom a:hover{
   @apply bg-[#f5f5f5]
 }
+
+.bama-sub-menu_top a{
+  @apply p-2 cursor-pointer 
+}
+
+.bama-sub-menu_top a:hover{
+  @apply bg-[#f5f5f5]
+}
+
+.bama-sub-menu_bottom a{
+  @apply p-2 cursor-pointer text-[14px] font-peydaWeb
+}
+
+.bama-sub-menu_bottom a:hover{
+  @apply bg-[#f5f5f5]
+}
+
 
 /************************************ below header section styles */
 
