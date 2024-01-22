@@ -406,23 +406,48 @@
         <div
           class="filters-wrapper-left col-start-2 col-end-4 flex justify-between"
         >
-          <div class="card w-[400px] rounded-[5px] p-[20px] ">
-            <div class="price-content flex mt-[-1rem] items-center justify-between my-0 mx-[10px] w-[300px] text-center">
+          <div class="card w-[400px] rounded-[5px] p-[20px]">
+            <div
+              class="price-content flex mt-[-1rem] items-center justify-between my-0 mx-[10px] w-[300px] text-center"
+            >
               <div
                 class="filters-wrapper-price-container w-[340px] flex flex-row"
               >
                 <label class="text-[18px]" for="">قیمت</label>
               </div>
-              <div class="text-[#1f1f1e] w-[180px]">
-                <p class="font-yekan text-[16px] ">0 - 30 میلیارد تومان</p>
+              <div class="text-[#1f1f1e] w-[200px] flex">
+                <p class="font-yekan text-[16px]" id="min-value">0</p>
+                <p class="font-yekan text-[16px]" id="max-value">- 30 میلیارد تومان</p>
               </div>
             </div>
 
-            <div class="range-slider w-[300px] relative mt-[15px] mx-0 mb-[30px]">
-              <div class="range-fill h-[6px]  absolute z-5"></div>
+            <div
+              class="range-slider w-[300px] relative mt-[15px] mx-0 mb-[30px] "
+            >
+              <div class="range-fill h-[6px] absolute z-5"></div>
 
-              <input type="range" class="min-price" value="100" min="0" max="3000000000" step="10">
-              <input type="range" class="max-price" value="250" min="0" max="3000000000" step="10">
+              <div>
+                <div>
+                  <input
+                    type="range"
+                    class="min-price flex justify-between"
+                    value="100"
+                    min="0"
+                    max="3000000000"
+                    step="10"
+                  />
+               
+                
+                  <input
+                    type="range"
+                    class="max-price"
+                    value="250"
+                    min="0"
+                    max="3000000000"
+                    step="10"
+                  />
+                </div>
+              </div>
             </div>
           </div>
 

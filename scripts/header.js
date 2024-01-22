@@ -122,6 +122,11 @@ function validateRange() {
   let minPrice = parseInt(inputElements(0).value);
   let maxPrice = parseInt(inputElements(1).value);
 
+  const minPercentage = (minPrice - 10 / 2999999990) * 100;
+  const maxPercentage = (maxPrice - 10 / 2999999990) * 100;
+
+  rangeFill.style.left = minPercentage+"%";
+  rangeFill.style.width = maxPercentage - minPercentage+"%";
   minValue.innerHTML = "تومان" + minPrice;
   maxValue.innerHTML = "تومان" + maxPrice;
 }

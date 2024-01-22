@@ -203,6 +203,15 @@ input[type="range"]::-webkit-slider-runnable-track{
   border-radius: 3px;
 }
 
+
+
+
+
+
+
+
+
+
 /*************************** Brand modal style */
 .backdrop {
   @apply backdrop-blur-[10px];
