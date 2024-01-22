@@ -88,34 +88,24 @@ carData.forEach((car) => {
   ulElement.appendChild(li);
 });
 
-carLi.addEventListener("mouseover", () => {
-  carSubmenu.style.display = "block";
-});
-carLi.addEventListener("mouseout", () => {
-  carSubmenu.style.display = "none";
+// Show/hide car submenus
+const submenus = [carSubmenu, motorSubmenu, heavySubmenu, bamaSubmenu];
+const submenuTriggers = [carLi, motorcycleLi, heavyCarLi, bamaLi];
+
+submenuTriggers.forEach((trigger, index) => {
+  trigger.addEventListener("mouseover", () => {
+    submenus.forEach((submenu) => {
+      submenu.style.display = "none";
+    });
+    submenus[index].style.display = "block";
+  });
+
+  trigger.addEventListener("mouseout", () => {
+    submenus[index].style.display = "none";
+  });
 });
 
-motorcycleLi.addEventListener("mouseover", () => {
-  motorSubmenu.style.display = "block";
-});
-motorcycleLi.addEventListener("mouseout", () => {
-  motorSubmenu.style.display = "none";
-});
-
-heavyCarLi.addEventListener("mouseover", () => {
-  heavySubmenu.style.display = "block";
-});
-heavyCarLi.addEventListener("mouseout", () => {
-  heavySubmenu.style.display = "none";
-});
-
-bamaLi.addEventListener("mouseover", () => {
-  bamaSubmenu.style.display = "block";
-});
-bamaLi.addEventListener("mouseout", () => {
-  bamaSubmenu.style.display = "none";
-});
-
+// Show/hide account submenu
 accountElement.addEventListener("mouseover", () => {
   accountSubmenu.style.display = "block";
 });
@@ -123,3 +113,4 @@ accountElement.addEventListener("mouseover", () => {
 accountElement.addEventListener("mouseout", () => {
   accountSubmenu.style.display = "none";
 });
+
