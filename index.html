@@ -370,16 +370,14 @@
         <a href="#">دوگانه سوز</a>
         <a href="#">منطقه آزاد</a>
       </div>
-      <div class=" mr-[8rem] mt-20 ">
+      <div class="mr-[8rem] mt-20">
         <img
           src="./assets/first-pic.svg"
           class="w-[240px] h-[50px]"
           alt="prestig-pic"
         />
       </div>
-      <div
-        class="w-[80%] flex justify-between my-[1rem] relative mx-auto"
-      >
+      <div class="w-[80%] flex justify-between my-[1rem] relative mx-auto">
         <div class="flex">
           <img src="./assets/second-pic.svg" alt="fidelity-pic" />
           <img
@@ -394,8 +392,9 @@
           اطلاعات بیشتر
         </button>
       </div>
+
       <div
-        class="filters-wrapper w-[80%] bg-[#fff] grid grid-cols-3 mx-auto mt-7 px-[1.8rem] py-[2rem]  z-1"
+        class="filters-wrapper w-[80%] bg-[#fff] grid grid-cols-3 mx-auto mt-7 px-[1.8rem] py-[2rem] z-1"
       >
         <div class="filters-wrapper-right col-start-1 col-end-2 cursor-pointer">
           <p>برند،مدل</p>
@@ -407,35 +406,26 @@
         <div
           class="filters-wrapper-left col-start-2 col-end-4 flex justify-between"
         >
-          <div class="range-slider w-[300px] text-center relative">
-            <div
-              class="filters-wrapper-price-container bg-slate-600 w-[300px] flex flex-row"
-            >
-              <span>قیمت</span>
-              <p class="text-[14px] opacity-80 font-peydaWeb">
-                0 میلیون - 30 میلیارد تومان
-              </p>
+          <div class="card w-[400px] rounded-[5px] p-[20px] ">
+            <div class="price-content flex mt-[-1rem] items-center justify-between my-0 mx-[10px] w-[300px] text-center">
+              <div
+                class="filters-wrapper-price-container w-[340px] flex flex-row"
+              >
+                <label class="text-[18px]" for="">قیمت</label>
+              </div>
+              <div class="text-[#1f1f1e] w-[180px]">
+                <p class="font-yekan text-[16px] ">0 - 30 میلیارد تومان</p>
+              </div>
             </div>
-            <span class="range-values block"></span>
-            <input
-              type="range"
-              name=""
-              value="0"
-              min="0"
-              max="30000000000"
-              step="10"
-              id=""
-            />
-            <input
-              type="range"
-              name=""
-              value="30000000000"
-              min="0"
-              max="30000000000"
-              step="10"
-              id=""
-            />
+
+            <div class="range-slider w-[300px] relative mt-[15px] mx-0 mb-[30px]">
+              <div class="range-fill h-[6px]  absolute z-5"></div>
+
+              <input type="range" class="min-price" value="100" min="0" max="3000000000" step="10">
+              <input type="range" class="max-price" value="250" min="0" max="3000000000" step="10">
+            </div>
           </div>
+
           <div>
             <div
               class="all-ad-btn flex flex-row items-center w-[270px] bg-[#afe600] py-[1rem] px-[3rem] rounded-[40px]"

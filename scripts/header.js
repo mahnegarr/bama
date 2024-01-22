@@ -114,3 +114,19 @@ accountElement.addEventListener("mouseout", () => {
   accountSubmenu.style.display = "none";
 });
 
+let minValue = document.getElementById("min-value");
+let maxValue = document.getElementById("max-value");
+
+const rangeFill = document.querySelector(".range-fill");
+function validateRange() {
+  let minPrice = parseInt(inputElements(0).value);
+  let maxPrice = parseInt(inputElements(1).value);
+
+  minValue.innerHTML = "تومان" + minPrice;
+  maxValue.innerHTML = "تومان" + maxPrice;
+}
+const inputElements = document.querySelectorAll("input");
+
+inputElements.forEach((e) => {
+  e.addEventListener("input", validateRange);
+});

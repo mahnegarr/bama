@@ -63,89 +63,88 @@ body {
 }
 
 /************************************ Header's submenus */
-.menu-items li{
-  @apply py-8
+.menu-items li {
+  @apply py-8;
 }
-.car-sub-menu_top a{
-  @apply p-2 cursor-pointer 
-}
-
-.car-sub-menu_top a:hover{
-  @apply bg-[#f5f5f5]
+.car-sub-menu_top a {
+  @apply p-2 cursor-pointer;
 }
 
-.car-sub-menu_bottom a{
-  @apply p-2 cursor-pointer text-[14px] font-peydaWeb
+.car-sub-menu_top a:hover {
+  @apply bg-[#f5f5f5];
 }
 
-.car-sub-menu_bottom a:hover{
-  @apply bg-[#f5f5f5]
+.car-sub-menu_bottom a {
+  @apply p-2 cursor-pointer text-[14px] font-peydaWeb;
 }
 
-.motor-sub-menu_top a{
-  @apply p-2 cursor-pointer 
+.car-sub-menu_bottom a:hover {
+  @apply bg-[#f5f5f5];
 }
 
-.motor-sub-menu_top a:hover{
-  @apply bg-[#f5f5f5]
+.motor-sub-menu_top a {
+  @apply p-2 cursor-pointer;
 }
 
-.motor-sub-menu_bottom a{
-  @apply p-2 cursor-pointer text-[14px] font-peydaWeb
+.motor-sub-menu_top a:hover {
+  @apply bg-[#f5f5f5];
 }
 
-.motor-sub-menu_bottom a:hover{
-  @apply bg-[#f5f5f5]
+.motor-sub-menu_bottom a {
+  @apply p-2 cursor-pointer text-[14px] font-peydaWeb;
 }
 
-.heavy-sub-menu_top a{
-  @apply p-2 cursor-pointer 
+.motor-sub-menu_bottom a:hover {
+  @apply bg-[#f5f5f5];
 }
 
-.heavy-sub-menu_top a:hover{
-  @apply bg-[#f5f5f5]
+.heavy-sub-menu_top a {
+  @apply p-2 cursor-pointer;
 }
 
-.heavy-sub-menu_bottom a{
-  @apply p-2 cursor-pointer text-[14px] font-peydaWeb
+.heavy-sub-menu_top a:hover {
+  @apply bg-[#f5f5f5];
 }
 
-.heavy-sub-menu_bottom a:hover{
-  @apply bg-[#f5f5f5]
+.heavy-sub-menu_bottom a {
+  @apply p-2 cursor-pointer text-[14px] font-peydaWeb;
 }
 
-.bama-sub-menu_top a{
-  @apply p-2 cursor-pointer 
+.heavy-sub-menu_bottom a:hover {
+  @apply bg-[#f5f5f5];
 }
 
-.bama-sub-menu_top a:hover{
-  @apply bg-[#f5f5f5]
+.bama-sub-menu_top a {
+  @apply p-2 cursor-pointer;
 }
 
-.bama-sub-menu_bottom a{
-  @apply p-2 cursor-pointer text-[14px] font-peydaWeb
+.bama-sub-menu_top a:hover {
+  @apply bg-[#f5f5f5];
 }
 
-.bama-sub-menu_bottom a:hover{
-  @apply bg-[#f5f5f5]
+.bama-sub-menu_bottom a {
+  @apply p-2 cursor-pointer text-[14px] font-peydaWeb;
 }
 
-.account-sub-menu_top a{
-  @apply p-2 cursor-pointer 
+.bama-sub-menu_bottom a:hover {
+  @apply bg-[#f5f5f5];
 }
 
-.account-sub-menu_top a:hover{
-  @apply bg-[#f5f5f5]
+.account-sub-menu_top a {
+  @apply p-2 cursor-pointer;
 }
 
-.account-sub-menu_bottom a{
-  @apply p-2 cursor-pointer text-[14px] font-peydaWeb
+.account-sub-menu_top a:hover {
+  @apply bg-[#f5f5f5];
 }
 
-.account-sub-menu_bottom a:hover{
-  @apply bg-[#f5f5f5]
+.account-sub-menu_bottom a {
+  @apply p-2 cursor-pointer text-[14px] font-peydaWeb;
 }
 
+.account-sub-menu_bottom a:hover {
+  @apply bg-[#f5f5f5];
+}
 
 /************************************ below header section styles */
 
@@ -177,33 +176,59 @@ body {
 
 /*************************** Price Range Slider Style */
 
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  left: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  background: rgb(77, 76, 76);
+  border-radius: 40px;
+  cursor: pointer;
+  margin-top: -5px;
+  position: relative;
+  z-index: 5
+}
+
+input[type="range"]::-webkit-slider-runnable-track{
+  width: 100%;
+  height: 3px;
+  background: rgb(108, 107, 107);
+  border-radius: 3px;
+}
+
 /*************************** Brand modal style */
 .backdrop {
   @apply backdrop-blur-[10px];
 }
 
 /*************************** Price and technical widgets */
-.splide{
+.splide {
   display: flex;
   padding: 60px 0;
-  position: relative ;
+  position: relative;
   white-space: nowrap;
-  overflow: hidden
+  overflow: hidden;
 }
 .splide-li {
-  @apply h-[120px] my-0 mx-6 ;
+  @apply h-[120px] my-0 mx-6;
 }
 
-
-.splide-info{
-  @apply flex flex-col mt-4 mb-1
+.splide-info {
+  @apply flex flex-col mt-4 mb-1;
 }
 
-.splide-title{
-  @apply text-[12px] text-[#1f1f1e]
+.splide-title {
+  @apply text-[12px] text-[#1f1f1e];
 }
-.splide-price{
-  @apply flex items-center
+.splide-price {
+  @apply flex items-center;
 }
 .splide-container {
   display: flex;
@@ -236,7 +261,6 @@ body {
   content: "";
   z-index: 2;
 }
-
 
 @media (max-width: 900px) {
   .fav-cars-sec div:nth-of-type(2) {
