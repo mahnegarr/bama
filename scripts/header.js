@@ -118,10 +118,12 @@ accountElement.addEventListener("mouseout", () => {
 
 const hamburger = document.querySelector(".hamburger-button");
 const hamBackdrop = document.querySelector(".ham-backdrop");
-const carSubTop = document.querySelector(".car-ul ")
+const hamContainer = document.querySelector(".hamburger-container")
+
 hamburger.addEventListener("click", () => {
   hamBackdrop.style.display = "block";
-  carSubTop.style.display ="block"
+  hamContainer.style.display ="block"
+
 });
 
 crossIcon.addEventListener("click",()=>{

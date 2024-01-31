@@ -572,6 +572,10 @@ video {
   left: 50%;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .right-\[100\%\] {
   right: 100%;
 }
@@ -626,6 +630,10 @@ video {
 
 .z-10 {
   z-index: 10;
+}
+
+.z-30 {
+  z-index: 30;
 }
 
 .col-start-1 {
@@ -1437,6 +1445,10 @@ video {
   caret-color: transparent;
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .opacity-50 {
   opacity: 0.5;
 }
@@ -1885,26 +1897,24 @@ input[type="range"]::-webkit-slider-runnable-track {
   z-index: 2;
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .fav-cars-sec div:nth-of-type(2) {
-    display: flex;
-    padding-right: 1rem;
+    @apply flex pr-4;
   }
-
   .fav-cars-sec a {
-    padding-left: 0.75rem;
+    @apply pl-3;
   }
-}
+} */
 
 @media (max-width: 980px) {
+  body{
+    width: 100%;
+  }
+
   .profile-text,
   .submit-add p,
   .menu-items {
     display: none;
-  }
-
-  .car-ul{
-    background: red;
   }
 
   .submit-add {
@@ -1931,8 +1941,24 @@ input[type="range"]::-webkit-slider-runnable-track {
     height: 100vh;
   }
 
-  .top-section {
-    background-image: url(../assets/top-sec-smaller.jpg);
+  .search-items-container{
+    width: 100%;
+  }
+
+  .top-section{
+    background-size: cover;
+  }
+
+  .filters-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .all-ad-btn{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
 
