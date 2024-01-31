@@ -114,8 +114,21 @@ accountElement.addEventListener("mouseout", () => {
   accountSubmenu.style.display = "none";
 });
 
+// HAmburger Menu
 
+const hamburger = document.querySelector(".hamburger-button");
+const hamBackdrop = document.querySelector(".ham-backdrop");
+const carSubTop = document.querySelector(".car-ul ")
+hamburger.addEventListener("click", () => {
+  hamBackdrop.style.display = "block";
+  carSubTop.style.display ="block"
+});
 
+crossIcon.addEventListener("click",()=>{
+  hamBackdrop.style.display="none";
+  
+})
 
-
-
+hamBackdrop.addEventListener("click",()=>{
+  hamBackdrop.style.display="none"
+})

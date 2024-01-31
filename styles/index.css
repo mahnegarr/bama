@@ -193,24 +193,15 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
   margin-top: -5px;
   position: relative;
-  z-index: 5
+  z-index: 5;
 }
 
-input[type="range"]::-webkit-slider-runnable-track{
+input[type="range"]::-webkit-slider-runnable-track {
   width: 100%;
   height: 3px;
   background: rgb(108, 107, 107);
   border-radius: 3px;
 }
-
-
-
-
-
-
-
-
-
 
 /*************************** Brand modal style */
 .backdrop {
@@ -279,13 +270,24 @@ input[type="range"]::-webkit-slider-runnable-track{
     @apply pl-3;
   }
 }
-/* @media (max-width: 900px) {
+@media (max-width: 980px) {
   .profile-text,
-  .profile-icon,
+  .submit-add p,
   .menu-items {
     display: none;
   }
-
+.car-ul{
+  background: red;
+}
+ 
+  .submit-add {
+    border: 0;
+    margin-right: 0;
+  }
+  .header-container {
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
   .hamburger-button {
     display: block;
     border: none;
@@ -303,4 +305,4 @@ input[type="range"]::-webkit-slider-runnable-track{
   .top-section {
     background-image: url(../assets/top-sec-smaller.jpg);
   }
-} */
+}

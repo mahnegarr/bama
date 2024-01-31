@@ -20,6 +20,10 @@
           <button class="hamburger-button hidden" data-v-08673970="">
             <i class="fas fa-bars"></i>
           </button>
+          <div
+          class="ham-backdrop hidden absolute top-0 left-0 w-full h-full z-2 bg-[#171414] opacity-55"
+        ><i class="fas fa-times text-white absolute left-0 p-12 cursor-pointer text-[2rem]"></i></div>
+
           <div class="menu-items">
             <ul class="flex flex-row">
               <li id="car">
@@ -29,7 +33,7 @@
                 >
                   <span class="flex h-[2px] z-10 w-7 mr-7 bg-black"></span>
                   <div class="car-sub-menu_top p-2">
-                    <ul class="flex flex-col">
+                    <ul class="car-ul flex flex-col ">
                       <a><i class="fas fa-car pl-2"></i> خرید خودرو</a>
                       <a><i class="fas fa-plus pl-2"></i> ثبت آگهی خودرو</a>
                       <a
@@ -417,12 +421,14 @@
               </div>
               <div class="text-[#1f1f1e] w-[200px] flex">
                 <p class="font-yekan text-[16px]" id="min-value">0</p>
-                <p class="font-yekan text-[16px]" id="max-value">- 30 میلیارد تومان</p>
+                <p class="font-yekan text-[16px]" id="max-value">
+                  - 30 میلیارد تومان
+                </p>
               </div>
             </div>
 
             <div
-              class="range-slider w-[300px] relative mt-[15px] mx-0 mb-[30px] "
+              class="range-slider w-[300px] relative mt-[15px] mx-0 mb-[30px]"
             >
               <div class="range-fill h-[6px] absolute z-5"></div>
 
@@ -436,8 +442,7 @@
                     max="3000000000"
                     step="10"
                   />
-               
-                
+
                   <input
                     type="range"
                     class="max-price"
