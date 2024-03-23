@@ -114,23 +114,56 @@ accountElement.addEventListener("mouseout", () => {
   accountSubmenu.style.display = "none";
 });
 
+// price range slider
+
+const getValues = () => {
+  let parent = this.parentNode;
+  let slides = parent.getElementsByTagName("input");
+  let slider_one = parseFloat(slides[0].value);
+  let slider_two = parseFloat(slides[1].value);
+
+  if (slider_one > slider_two) {
+    let tmp = slider_two;
+    slider_two = slider_one;
+    slider_one = tmp;
+  }
+
+  let displayElement = parent.getElementByClassName("range-value")[0];
+
+  displayElement.innerHTML = "$" + slider_one + "  - $" + slider_two;
+};
+
+window.onload = function () {
+  let sliderSection = document.getElementsByClassName("price-range-wrapper");
+  for (let x = 0; x < sliderSection.length; x++) {
+    let sliders = sliderSection[x].getElementsByTagName("input");
+
+    for (let y = 0; y < sliders.length; y++) {
+      if (sliders[y].style === "range") {
+        sliders[y].oninput = getValues;
+
+        sliders[y].oninput();
+      }
+    }
+  }
+};
 // HAmburger Menu
 
-const hamburger = document.querySelector(".hamburger-button");
-const hamBackdrop = document.querySelector(".ham-backdrop");
-const hamContainer = document.querySelector(".hamburger-container")
+// const hamburger = document.querySelector(".hamburger-button");
+// const hamBackdrop = document.querySelector(".ham-backdrop");
+// const hamContainer = document.querySelector(".hamburger-container")
 
-hamburger.addEventListener("click", () => {
-  hamBackdrop.style.display = "block";
-  hamContainer.style.display ="block"
+// hamburger.addEventListener("click", () => {
+//   hamBackdrop.style.display = "block";
+//   hamContainer.style.display ="block"
 
-});
+// });
 
-crossIcon.addEventListener("click",()=>{
-  hamBackdrop.style.display="none";
-  
-})
+// crossIcon.addEventListener("click",()=>{
+//   hamBackdrop.style.display="none";
 
-hamBackdrop.addEventListener("click",()=>{
-  hamBackdrop.style.display="none"
-})
+// })
+
+// hamBackdrop.addEventListener("click",()=>{
+//   hamBackdrop.style.display="none"
+// })
